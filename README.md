@@ -15,5 +15,5 @@ pip install -r requirements.txt
 ```
 ### RUNNING
 ```
-python scripts/main.py
+
 ```
