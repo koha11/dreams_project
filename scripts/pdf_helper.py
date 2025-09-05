@@ -1,7 +1,7 @@
 from pathlib import Path
 import re
 import fitz
-from typing import List, Dict, Optional
+from typing import Iterable, List, Dict, Optional
 
 from pydantic import BaseModel
 
@@ -270,7 +270,7 @@ def llm_filter_dream_text(dream_text: str) -> str:
         1 giấc mơ có 6 key case_id, dream_id, date, dream_text, state_of_mind, notes, 
         với case_id mặc định là C01, notes là From PDF: title_pdf, 
         dream_id có format là Dxxxx (x là số, ví dụ D0001, D0002,...) và phải bắt đầu từ id trước đó (được cung cấp trong văn bản),
-        date thì lấy theo định dạng dd-mm-yyyy,
+        date thì lấy theo định dạng dd/mm/yyyy,
         phần dream_text là quan trọng nhất, bạn phải lấy chính xác từng dream riêng biệt,
         và nội dung phải y hệt với văn bản gốc (loại bỏ các ký tự escapse, các từ để liệt kê như my first dream is, second dream,... hay các chỉ mục 1., 2., ...),
         """,
@@ -281,13 +281,40 @@ def llm_filter_dream_text(dream_text: str) -> str:
 
     response = client.models.generate_content(
         model="gemini-2.0-flash-lite", contents=dream_text, config=config
-    )
-    
-    # data = json.loads(response.text)
-    # print(type(data), data)
+    )    
     
     data: List[Dream] = response.parsed
     
     write_output(f"\n{response.text}\n")
         
-    return data
+    return update_dreams(data)
+
+def update_dreams(dreams: Iterable[Dream]) -> List[Dream]:
+    return [
+        d.model_copy(update={"dream_text": clean_dream_text(d.dream_text)})
+        for d in dreams
+    ]
+
+def clean_dream_text(s: str) -> str:
+    if not s:
+        return ""
+    # Normalize newlines and spaces
+    s = s.replace("\r\n", "\n").replace("\r", "\n")
+    s = s.replace("\u00A0", " ")             # non-breaking space -> normal space
+    s = re.sub(r"[ \t]+", " ", s)            # collapse runs of spaces/tabs
+    s = "\n".join(line.strip() for line in s.split("\n"))  # trim each line
+    s = s.replace("\n", " ")               # replace newlines with spaces
+    s = re.sub(r" +", " ", s)               # collapse multiple spaces
+    s = s.strip()
+      
+    # Strip enclosing triple quotes: """ ... """
+    m = re.fullmatch(r'\s*"""\s*([\s\S]*?)\s*"""\s*', s)
+    if m:
+        s = m.group(1).strip()
+
+    # Strip enclosing single double-quotes: " ... "
+    m = re.fullmatch(r'\s*"\s*([\s\S]*?)\s*"\s*', s)
+    if m:
+        s = m.group(1).strip()
+        
+    return s

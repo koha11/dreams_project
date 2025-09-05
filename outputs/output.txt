@@ -47,31 +47,31 @@ Thank you very much.
   {
     "case_id": "C01",
     "dream_id": "D0001",
-    "date": "15-02-2022",
-    "dream_text": "My boyfriend and I came back to his home - not his present house. His family had dinner but we have not eaten . I prepared the meal for both of us. His younger sister showed me the place to take the food. The preparation was nearly completed with a lack of fish sauce so he was taking it. I went down to the ground floor while he was on the high floor . Then he finished making fish sauce, I went up without his call. When I am on the highest floor, he and my old girlfriend swinged down by rope and he dropped the friend off. He intended to ask me to marry but I was at the beginning position and I was looking down.",
+    "date": "15/02/2022",
+    "dream_text": "My boyfriend and I came back to his home - not his present house. His family had dinner but we have not eaten  . I prepared  the meal for both of us. His younger sister showed me the place to take the food. The preparation was nearly completed with a lack of fish sauce so he was taking it. I went down to the ground floor   while he was on the high floor . Then he finished making fish sauce, I went up without his call. When I am on the highest floor, he and my old girlfriend  swinged down by rope and he dropped the friend off. He intended to ask me to marry but I was at the beginning position  and I was looking down.",
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal"
   },
   {
     "case_id": "C01",
     "dream_id": "D0002",
-    "date": "15-02-2022",
-    "dream_text": "\"I was attacked by a white strong light from both sides when I ran after a friend I could not open my eyes . I did Tai Chi weakly before I fainted.\"",
+    "date": "15/02/2022",
+    "dream_text": "\"I was attacked by a white strong light from both sides when I ran after a friend  I could not open my eyes . I did Tai Chi weakly before I fainted.\"",
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal"
   },
   {
     "case_id": "C01",
     "dream_id": "D0003",
-    "date": "15-02-2022",
-    "dream_text": "My friend, Y and I discovered a white strange paint stain falling down from the roof when my paternal family gathered to celebrate flew down to find us but we escaped so it flew away.  A next scene, a white paint stain from the roof fell down on some children , they just dissolved, a big creature attacked, luckily a man hit the creature and it disappeared.  A next scent, when the family gathered in the attic , my mother and I saw a paint stain, and I announced dissolving immediately. Everyone except I and Y ran to the door . We hid to the back, jumped to other roofs to hide and find the signal of the creature. Some of the adults also found it when he was preparing to attack but it ran away in our way. I was protected by my cousin when I was on the roof. Then, I was on the way back home . I have just been on a bridge then a big water flowed and brought a big shark . I held the bridge and pretended to die and escaped.  When I was at home, I decided to pick my lover up to my house to have dinner. His home is in a military area . It used to be a school where I spent my time when I was a child. I guaranteed to protect him and I believed I can do it. When I crossed the military school, it was a big wind but I still took him to his home.\"",
+    "date": "15/02/2022",
+    "dream_text": "My friend, Y and I discovered a white strange paint stain falling down from the roof when my paternal family gathered to celebrate flew down to find us but we escaped so it flew away.  A next scene, a white paint stain from the roof fell down on some children , they just dissolved, a big creature attacked, luckily a man hit the creature and it disappeared.  A next scent, when the family gathered in the attic , my mother and I saw a paint stain, and I announced dissolving immediately. Everyone except I and Y ran to the door . We hid to the back, jumped to other roofs to hide and find the signal of the creature. Some of the adults also found it when he was preparing to attack but it ran away in our way. I was protected by my cousin when I was on the roof. Then, I was on the way back home . I have just been on a bridge then a big water flowed and brought  a big shark . I held the bridge and pretended to die and escaped.  When I was at home, I decided to pick my lover up to my house to have dinner. His home is in a military area . It used to be a school where I spent my time when I was a child. I guaranteed to protect him and I believed I can do it. When I crossed the military school, it was a big wind but I still took him to his home.",
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal"
   },
   {
     "case_id": "C01",
     "dream_id": "D0004",
-    "date": "15-02-2022",
+    "date": "15/02/2022",
     "dream_text": "\"I was in a class and prepared for an examination . A woman teacher guided me using a cow replace a pig for the examination .\"",
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal"
@@ -79,16 +79,16 @@ Thank you very much.
   {
     "case_id": "C01",
     "dream_id": "D0005",
-    "date": "15-02-2022",
-    "dream_text": "\" a registration of marriage \"",
+    "date": "15/02/2022",
+    "dream_text": "a registration of marriage",
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal"
   },
   {
     "case_id": "C01",
     "dream_id": "D0006",
-    "date": "15-02-2022",
-    "dream_text": "I, Oanh Quang , Nguyen and some friends gathered at a place on a floor to chat and then moved to a party . We needed to walk to the party. The street was like a street coming to . There were. many groups dressed in different clothes . I was suddenly called from a group. The group is 3 girls wearing hoodies . I was invited to dance together with them on the platform. Then I moved to another place. All my friends disappeared . I knew they were coming back in the first place, I was waiting for them in anger. After a long time, they rode across me to leave.",
+    "date": "15/02/2022",
+    "dream_text": "I, Oanh Quang  , Nguyen and some friends gathered at a place on a floor  to chat and then moved to a party . We needed to walk to the party. The street was like a street coming to . There were. many groups dressed in different clothes . I was suddenly called from a group. The group is 3 girls wearing hoodies . I was invited to dance  together with them on the platform. Then I moved to another place. All my friends disappeared . I knew they were coming back in the first place, I was waiting for them in anger. After a long time, they rode across me to leave.",
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal"
   }
@@ -129,7 +129,7 @@ Thank you
   {
     "case_id": "C01",
     "dream_id": "D0007",
-    "date": "05-05-2022",
+    "date": "05/05/2022",
     "dream_text": "I came to Binh Yen Noi - in English, it means a peace place where I and my friends went camping as I told you in last dream journal.  I came to take a birthday cake ..I reserved.",
     "state_of_mind": "Neutral",
     "notes": "From PDF: Binh Yen Noi campsite"
@@ -137,8 +137,8 @@ Thank you
   {
     "case_id": "C01",
     "dream_id": "D0008",
-    "date": "05-05-2022",
-    "dream_text": "I was on the way coming to my company.  I try a new way. I went up following 2 young men  They gave up when they were in the middle of a slope.  I felt the way was not right but I still wanted to try. I went to the highest of the slope  and saw Binh Yen Noi . I told the waiter  I was lost, he guided me went down  because of no other ways.  will be late at my work. I tried to run to my company . The company was in a building. I forgot bringing the elevator card I ran to the elevator and received the help from the guards. Coming in the\ncompany, I saw two men who were threatening me  There were a man who we had a deep relationship and a man who I was in a love relationship. They were protecting me .",
+    "date": "05/05/2022",
+    "dream_text": "I was on the way coming to my company.  I try a new way. I went up following 2 young men  They gave up when they were in the middle of a slope.  I felt the way was not right but I still wanted to try. I went to the highest of the slope  and saw Binh Yen Noi . I told the waiter  I was lost, he guided me went down  because of no other ways.  will be late at my work. I tried to run to my company . The company was in a building. I forgot bringing the elevator card I ran to the elevator and received the help from the guards. Coming in the company, I saw two men who were threatening me  There were a man who we had a deep relationship and a man who I was in a love relationship. They were protecting me .",
     "state_of_mind": "Neutral",
     "notes": "From PDF: Binh Yen Noi campsite"
   }
@@ -177,8 +177,8 @@ Duyen        
   {
     "case_id": "C01",
     "dream_id": "D0009",
-    "date": "12-05-2022",
-    "dream_text": "My friends and I had a trip to Vung Tau - a coastal city in Vietnam . We came to a resort where we had an intention to stay After going to bathroom and visiting it, we were announced that it was full so we must find another place. \non internet and we decided to move them. My couple and another couple ( Quang and Oanh) were the final people leaving from the parking lot . A woman appeared and offered us her villa - 22 million Vietnam dong/day. I quickly calculated 220000 VND/person/day. We and others decided to visit her villa. I forced others making decision after watching it.",
+    "date": "12/05/2022",
+    "dream_text": "My friends and I had a trip\nto Vung Tau - a coastal city in Vietnam .  We came to a resort  where\nwe had an intention to stay  After going to bathroom and visiting it, we were announced that it was\nfull so we must find another place. \non internet and we decided to move them. My couple and\nanother couple ( Quang and Oanh)  were the final people leaving from the parking lot . A woman\nappeared and offered us her villa   - 22 million Vietnam dong/day. I quickly calculated 220000\nVND/person/day. We and others decided to visit her villa. I forced others making decision after\nwatching it.",
     "state_of_mind": "Neutral",
     "notes": "From PDF: A change"
   }
@@ -214,16 +214,16 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0010",
-    "date": "16-05-2022",
-    "dream_text": "I was in my home .  My brother helps me fix my motorbike .  In the afternoon, my brother was fixing a phone like iPhone  It was big as a table .   I asked him his purpose. He said in the future people may use it, nobody could not guess that. ",
+    "date": "16/05/2022",
+    "dream_text": "I was in my home .  My brother helps me fix my motorbike .  In the afternoon, my brother was fixing a phone like iPhone  It was big as a table .  I asked him his purpose. He said in the future people may use it, nobody could not guess that.",
     "state_of_mind": "Afraid, Touched",
     "notes": "From PDF: 11 USD"
   },
   {
     "case_id": "C01",
     "dream_id": "D0011",
-    "date": "16-05-2022",
-    "dream_text": "I am preparing to go to HCM city.   My father was drunk when he came home.   He brought his motorbike home . He sat next to iron fence . He smoked  He asked me if I prepared completely for my journey. I sat behind the washing machine to go toilet . I didn't wear a shirt.  Because It was not right, I was scared, I just showed my head to talk with him  My father said my brother fixed my motorbike well. He came to me. My father gave me a money - 11 usd . After my effort, I fail so my emotion explodes .  He said he used to be from b52 brigade , he had enough money  to give me  He hugged me and I felt touched and thanked him. ",
+    "date": "16/05/2022",
+    "dream_text": "I am preparing to go to HCM city.  My father was drunk when he came home.  He brought his motorbike home . He sat next to iron fence . He smoked  He asked me if I prepared completely for my journey. I sat behind the washing machine to go toilet . I didn't wear a shirt.  Because It was not right, I was scared, I just showed my head to talk with him  My father said my brother fixed my motorbike well. He came to me. My father gave me a money - 11 usd . After my effort, I fail so my emotion explodes .  He said he used to be from b52 brigade , he had enough money  to give me  He hugged me and I felt touched and thanked him.",
     "state_of_mind": "Afraid, Touched",
     "notes": "From PDF: 11 USD"
   }
@@ -263,7 +263,7 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0012",
-    "date": "27-05-2022",
+    "date": "27/05/2022",
     "dream_text": "An owner - a man allowed me to invest money a long time to his forest I saw some trees  be cut down The cut spots were smeared with substance . I asked him about that. He said those trees cannot grow again.",
     "state_of_mind": "Neutral",
     "notes": "From PDF: An investment"
@@ -308,7 +308,7 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0013",
-    "date": "19-08-2022",
+    "date": "19/08/2022",
     "dream_text": "I forgot to wear a bra when I went somewhere. When I found that , I quickly tried to find something to cover.",
     "state_of_mind": "Afraid",
     "notes": "From PDF: A complex thought"
@@ -316,7 +316,7 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0014",
-    "date": "19-08-2022",
+    "date": "19/08/2022",
     "dream_text": "I am standing on a small object floating on a large water",
     "state_of_mind": "Afraid",
     "notes": "From PDF: A complex thought"
@@ -368,7 +368,7 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0015",
-    "date": "26-08-2022",
+    "date": "26/08/2022",
     "dream_text": "I dreamed of a case from the Harry Potter series. There was a man who tried to save a person but his younger sister died.",
     "state_of_mind": "Surprise, neutral",
     "notes": "From PDF: Marriage"
@@ -376,7 +376,7 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0016",
-    "date": "26-08-2022",
+    "date": "26/08/2022",
     "dream_text": "It happened in my home. There was an elderly man who could not talk . He chose a kind of medicine in a  wardrobe . I took 3 perfect pills and 1 urgly pill . I asked him to take the urgly pill first to delete it.",
     "state_of_mind": "Surprise, neutral",
     "notes": "From PDF: Marriage"
@@ -415,16 +415,16 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0017",
-    "date": "31-08-2022",
-    "dream_text": "My friends and I had a party . After I got drunk , I had a short sleep I came back to the party and sat with my female friends  in the middle of the table while the male friends sat at two sides of the table. My attitude was not friendly at that time  I ate some dishes on the table. Then I saw myself at a large land. I went to a big road by bicycle and chose a direction. Firstly, I turned right on my intuition. There was something incorrect I checked the google map and discovered I should turn left . So I turned left and I saw a woman  with two barriers and two spaces between them. She would like to collect a fee But I ignored her and continued my direction . I passed by a pagoda where it had a billboard selling a thing in porcelain. I guessed it should be broken to define a real porcelain thing.",
+    "date": "31/08/2022",
+    "dream_text": "My friends and I had a party . After I got drunk , I had a short sleep I came back to the party and sat with my female friends  in the middle of the table while the male friends sat at two sides of the table. My attitude was not friendly at that time  I ate some dishes on the table. Then I saw myself at a large land. I went to a big road by bicycle and chose a direction. Firstly, I turned right on my intuition. There was something incorrect I checked the google map and discovered I should turn left . So I turned left and I saw a woman  with two barriers and two spaces between them. She would like to collect a fee But I ignored her and continued my direction . I passed by a pagoda where it had a billboard selling a thing in porcelain. I guessed it should be broken to define a real porcelain thing. ",
     "state_of_mind": "Tired",
     "notes": "From PDF: Lost"
   },
   {
     "case_id": "C01",
     "dream_id": "D0018",
-    "date": "31-08-2022",
-    "dream_text": "I have had a 4-day holiday at my boyfriend's hometown. My boyfriend spent his time at some parties with his friends. He got drunk. After a party, he came home and found me. I saw my attitude was the same as my mother's when my father came home after a party. The attitude is an uncomfortable feeling and a little angry. I used to hate this attitude from my mother and also wished I would not repeat it.",
+    "date": "31/08/2022",
+    "dream_text": "I have had a 4-day holiday at my boyfriend's hometown. My boyfriend spent his time at some parties with his friends. He got drunk. After a party, he came home and found me. I saw my attitude was the same as my mother's when my father came home after a party. The attitude is an uncomfortable feeling and a little angry. I used to hate this attitude from my mother and also wished I would not repeat it. ",
     "state_of_mind": "Tired",
     "notes": "From PDF: Lost"
   }
@@ -467,8 +467,8 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0019",
-    "date": "07-03-2022",
-    "dream_text": "My mother and I came to check-in at a luxury beautiful hotel .   Firstly, we were in line with a crowd attending  an event of Pros. Kaya and Pros. Christian to take hotel slippers  Everyone I met were easily angry .   I saw two pairs of pink slippers in the basket; I took one slipper and another from a person. I suddenly recognized and apologized him but he was so angry to accept . He took a slipper without retaking.  Some girls were noisy so I lost my attention.   I needed to take a paper for check-in.   My mother and I went along the corridor to our room, we could see all beds in all rooms there. Their walls were like a door to go through.   A woman staff stood in the middle of the corridor to test and she asked me. I answered rightly so she let my mother and I go through.  Two old friends  helped us bring our luggage to our room \nI said something made my mother angry.\nShe moved to the hotel lobby.  The friends and I asked the reason but she kept silent and found something until my aunt  appeared. She was angry and left.",
+    "date": "07/03/2022",
+    "dream_text": "My mother and I came to check-in at a luxury beautiful hotel .  Firstly, we were in line with a crowd attending  an event of Pros. Kaya and Pros. Christian to take hotel slippers  Everyone I met were easily angry .  I saw two pairs of pink slippers in the basket; I took one slipper and another from a person. I suddenly recognized and apologized him but he was so angry to accept . He took a slipper without retaking.  Some girls were noisy so I lost my attention.   I needed to take a paper for check-in.  My mother and I went along the corridor to our room, we could see all beds in all rooms there. Their walls were like a door to go through.   A woman staff stood in the middle of the corridor to test and she asked me. I answered rightly so she let my mother and I go through.  Two old friends  helped us bring our luggage to our room I said something made my mother angry. She moved to the hotel lobby.  The friends and I asked the reason but she kept silent and found something until my aunt  appeared. She was angry and left.",
     "state_of_mind": "Coldness, Angry",
     "notes": "From PDF: A Luxury Hotel"
   }
@@ -505,16 +505,16 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0020",
-    "date": "15-09-2022",
-    "dream_text": "I would like to go to the toilet knew that I could find that in my grandmother's room . I went to that room . I saw the first grandmother who was eating at a table near the door. And the second grandmother was taking the toilet beside the room . I waited for the second grandmother. After going to the toilet, the second grandmother came to the room and asked the first grandmother to clean her . The first grandmother was trying to complete her meal to do it. I went to the toilet and it has not flushed . I pushed the button two or three times continuously. Suddenly my younger brother and an animal sat on it. They made the toilet clogged then the whirlpool was very strong then splashed out. When I ran out , I remembered there was something near it.",
+    "date": "15/09/2022",
+    "dream_text": "I would like to go to the toilet   knew that I could find that in my grandmother's room . I went to that room . I saw the first grandmother  who was eating at a table  near the door. And the second grandmother   was taking the toilet beside the room . I waited for the second grandmother. After going to the toilet, the second grandmother came to the room and asked the first grandmother to clean her . The first grandmother was trying to complete her meal to do it. I went to the toilet and it has not flushed . I pushed the button two or three times continuously. Suddenly my younger brother  and an animal        sat on it. They made the toilet clogged   then the whirlpool was very strong then splashed out. When I ran out , I remembered there was something near it. ",
     "state_of_mind": "Surprise",
     "notes": "From PDF: Going to the toilet"
   },
   {
     "case_id": "C01",
     "dream_id": "D0021",
-    "date": "15-09-2022",
-    "dream_text": "I saw my male colleague He talked to me to focus the coffee project by whispering . After that, I woke up at night.",
+    "date": "15/09/2022",
+    "dream_text": "I saw my male colleague He talked to me to focus the coffee   project by whispering . After that, I woke up at night.",
     "state_of_mind": "Surprise",
     "notes": "From PDF: Going to the toilet"
   }
@@ -557,8 +557,8 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0022",
-    "date": "22-09-2022",
-    "dream_text": "I drove a motorbike with my female younger cousin to visit a beach in my hometown .\nI couldn't see clearly but I still tried to move. \nMy cousin and I talked a lot about her trip with her parents before they came to my home. \nThen, we met two of my male friends - Ngoc and Hoang They also drove a motorbike. We greeted each other and talked, then we continued our way. I thought too much, my sharing and my action is not enough so there is a discrepancy \nMy cousin and I came to a place where her sister slept in an object on the beach. We woke her up. ",
+    "date": "22/09/2022",
+    "dream_text": "I drove a motorbike with my female younger cousin to visit a beach in my hometown .  I couldn't see clearly but I still tried to move.  My cousin and I talked a lot about her trip with her parents before they came to my home.  Then, we met two of my male friends - Ngoc and Hoang They also drove a motorbike. We greeted each other and talked, then we continued our way. I thought too much, my sharing and my action is not enough so there is a discrepancy  My cousin and I came to a place where her sister slept in an object on the beach. We woke her up.  These days, I continue working with the angle on the intention of my boyfriend. We must be fit at 4 levels - spiritual, lectual, emotions and physical. For me, they are still general. Could you explain to me in detail? I also shared developing qualities, my learning DSSI, some things I learned from DSSI with my boyfriend. I asked him his opinion, he still wants to marry me. I saw I didn't pay enough attention to him. He has good actions but I do not say anything, do not encourage, do not record. I focus more on his wrong actions. I let my negative memories affect me a lot. I used to let my thoughts take control and this time, I am studying and doing a way to let them go, to give myself and my boyfriend better taking care.  . My boyfriend and I make love. My thought is always that he just wants my body when he does not take care of me enough  I am scared to face it if it becomes true. The thought came to nature and last night, when it came, I observed it and understood it is one of the reasons why I do not believe him fully, I did not record his other good actions, his personality. I just thought about my insecurity.",
     "state_of_mind": "Neutral",
     "notes": "From PDF: Sea"
   }
@@ -600,40 +600,16 @@ Duyen
   {
     "case_id": "C01",
     "dream_id": "D0023",
-    "date": "30-09-2022",
-    "dream_text": "I would like to share my dream. I am asking the Up Above \"is my boyfriend the right person for me in\nthis life?\". Is it right to ask too much one question?\nI use a masculine wooden ruler  fly with my female friend . It was like a broomstick We went\nthrough a forest to somewhere. THEN I lost her so I came back to find my friend.",
+    "date": "30/09/2022",
+    "dream_text": "I would like to share my dream. I am asking the Up Above \"is my boyfriend the right person for me in\nthis life?\". Is it right to ask too much one question? \nI use a masculine wooden ruler  fly with my female friend . It was like a broomstick We went\nthrough a forest to somewhere. THEN I lost her so I came back to find my friend. \nThe dream shows me the uncomfortable part I am trying to avoid doing that. It causes myself the\ninside too much thought, too much emotion. As I shared I thought negatively too much, I used to force myself to do something instead of\nanalyzing the meaning of my thoughts. It was a wrong way because it is still there without fixing. In meditation, I can focus on one\nthought and find the memories causing that to fix.",
     "state_of_mind": "Neutral",
     "notes": "From PDF: Advance by a stick"
   },
   {
     "case_id": "C01",
     "dream_id": "D0024",
-    "date": "30-09-2022",
-    "dream_text": "The dream shows me the uncomfortable part I am trying to avoid doing that. It causes myself the\ninside too much thought, too much emotion. As I shared I thought negatively too much, I used to force myself to do something instead of\nanalyzing the meaning of my thoughts. It was a wrong way because it is still there without fixing. In meditation, I can focus on one\nthought and find the memories causing that to fix.",
-    "state_of_mind": "Neutral",
-    "notes": "From PDF: Advance by a stick"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0025",
-    "date": "30-09-2022",
-    "dream_text": "I have not met my friend in a long time. She used to be one of my best friends. We spent our time in our childhood. Once, she and\nanother friend misunderstood each other. I knew the reason so I explained the story to the friend to help them fix their relationship. My\nfriend knew that so she thought I was a talkative, unreliable friend and she did not want to meet me anymore. Although I apologized to\nher, she did not accept. We didn't meet anymore from that.",
-    "state_of_mind": "Neutral",
-    "notes": "From PDF: Advance by a stick"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0026",
-    "date": "30-09-2022",
-    "dream_text": "My parents have just called me and asked me an option for my relationship. My family want us to organize a pre-wedding party at my\nhome on the day a feng shui master told for our couple. I have not received the answer from the Up Above so I do not follow that fully. I\njust let my boyfriend know that. I do not dare to share I am waiting for the answer from the Up Above. I only delay and delay.",
-    "state_of_mind": "Neutral",
-    "notes": "From PDF: Advance by a stick"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0027",
-    "date": "30-09-2022",
-    "dream_text": "I saw myself putting my attention to my boyfriend too much. I always put all of my priorities for him. I schedule my time following his\nschedule. It is not right. I like to stand by him. What should I do to fix it? Because it is unbalanced.",
+    "date": "30/09/2022",
+    "dream_text": "My parents have just called me and asked me an option for my relationship. My family want us to organize a pre-wedding party at my\nhome on the day a feng shui master told for our couple. I have not received the answer from the Up Above so I do not follow that fully. I\njust let my boyfriend know that. I do not dare to share I am waiting for the answer from the Up Above. I only delay and delay. \nI saw myself putting my attention to my boyfriend too much. I always put all of my priorities for him. I schedule my time following his\nschedule. It is not right. I like to stand by him. What should I do to fix it? Because it is unbalanced.",
     "state_of_mind": "Neutral",
     "notes": "From PDF: Advance by a stick"
   }
@@ -641,7 +617,7 @@ Duyen
 
 
 file: My family
-last dream id: D0027
+last dream id: D0024
 Date of dream: 
 Thursday, October 13, 2022
 Angel: 
@@ -671,8 +647,8 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0028",
-    "date": "12-10-2022",
+    "dream_id": "D0025",
+    "date": "12/10/2022",
     "dream_text": "I shared with my mother many kinds of sweet soups .",
     "state_of_mind": "Neutral",
     "notes": "From PDF: My family"
@@ -681,7 +657,7 @@ Duyen
 
 
 file: A step
-last dream id: D0028
+last dream id: D0025
 Date of dream: 
 Friday, October 21, 2022
 Angel: 
@@ -711,9 +687,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0029",
-    "date": "21-10-2022",
-    "dream_text": "I was on the way to my grandfather's house . Then I drove around an area two times .  I put a male stranger  But I avoided him.  I moved to my female friend's house .",
+    "dream_id": "D0026",
+    "date": "21/10/2022",
+    "dream_text": "I was on the way to my grandfather's house . Then I drove around an area two times .   I put a male stranger  But I avoided him.  I moved to my female friend's house .",
     "state_of_mind": "Stressful, tired",
     "notes": "From PDF: A step"
   }
@@ -721,7 +697,7 @@ Duyen
 
 
 file: My grandfather
-last dream id: D0029
+last dream id: D0026
 Date of dream: 
 Friday, November 11, 2022
 Angel: 
@@ -756,9 +732,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0030",
-    "date": "11-11-2022",
-    "dream_text": "I and my relatives sat and had a party at my grandfather's house  together . I sat next to my grandfather. One relative constantly\nspeaks provokingly to me . I felt angry. I throw a bowl  four times to remind him.   At the end of the party my grandfather told me a story\nfrom yesterday . My relatives asked a feng shui master about their good day but no one asked for me  . He asked for me . My good day is\nDecember 14th according to the Lunar Calendar . Then he left. I stayed to clean. I did while I cried. I felt sad because no one took care\nof me. My cousin asked for help from me. But I rejected him. ",
+    "dream_id": "D0027",
+    "date": "11/11/2022",
+    "dream_text": "I and my relatives sat and had a party at my grandfather's house \ntogether . I sat next to my grandfather. One relative constantly\nspeaks provokingly to me . I felt angry. I throw a bowl\n four times to remind him.  At the end of the party my grandfather told me a story\nfrom yesterday . My relatives asked a feng shui master about their good day but no one asked for me  . He asked for me . My good day is\nDecember 14th according to the Lunar Calendar . Then he left. I stayed to clean. I did while I cried. I felt sad because no one took care\nof me. My cousin asked for help from me. But I rejected him.",
     "state_of_mind": "alone, sad",
     "notes": "From PDF: My grandfather"
   }
@@ -766,7 +742,7 @@ Duyen
 
 
 file: Discovering a lake
-last dream id: D0030
+last dream id: D0027
 Date of dream: 
 Thursday, March 17, 2022
 Angel: 
@@ -798,17 +774,17 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0031",
-    "date": "17-03-2022",
-    "dream_text": "I woke up at my cousin's house  Her parents went aboard . I got out of the house and met her.  I invited her to discover the lake near her house. The lake spread in a large area with many large stones .  My cousin had a little bit postponed but she still wanted to go. I came back to change from my dress to my pants for the trip.   was dirt road houses after the stones  .  We stopped at a house having vines the way.   I fell unconscious and woke up tomorrow morning but my cousin left me at that house and come back. The owner took me to the beginning point by horse",
+    "dream_id": "D0028",
+    "date": "17/03/2022",
+    "dream_text": "I woke up at my cousin's house  Her parents went aboard . I got out of the house and met her.  I invited her to discover the lake near her house. The lake spread in a large area with many large stones .  My cousin had a little bit postponed but she still wanted to go. I came back to change from my dress to my pants for the trip.  was dirt road houses after the stones  .  We stopped at a house having vines the way.   I fell unconscious and woke up tomorrow morning but my cousin left me at that house and come back. The owner took me to the beginning point by horse",
     "state_of_mind": "Surprise, neutral",
     "notes": "From PDF: Discovering a lake"
   },
   {
     "case_id": "C01",
-    "dream_id": "D0032",
-    "date": "17-03-2022",
-    "dream_text": "The next case, I hold my baby  in line to meet a man doctor .  In the line, I saw my boyfriend , some women and some children.   My boyfriend was like a stranger. I loved my fragile child.   My mother and my cousin appeared.  There was an accident, a man wearing a white shirt without pants somersaulted. He wasn't hurt but his face was a little silly. Many people moved to watch but I came back to take care of my child. The doctor reminded me to apply for my medical record I gave my child to my mother before he took my blood from my hand.  My cousin waited too long so she gave a reason for changing oil for our motorbike to let us come home but the doctor didn't and he gave her some money for changing oil near the place. ",
+    "dream_id": "D0029",
+    "date": "17/03/2022",
+    "dream_text": "The next case, I hold my baby  in line to meet a man doctor .  In the line, I saw my boyfriend , some women and some children.   My boyfriend was like a stranger. I loved my fragile child.   My mother and my cousin appeared.  There was an accident, a man wearing a white shirt without pants somersaulted. He wasn't hurt but his face was a little silly. Many people moved to watch but I came back to take care of my child. The doctor reminded me to apply for my medical record I gave my child to my mother before he took my blood from my hand.  My cousin waited too long so she gave a reason for changing oil for our motorbike to let us come home but the doctor didn't and he gave her some money for changing oil near the place.",
     "state_of_mind": "Surprise, neutral",
     "notes": "From PDF: Discovering a lake"
   }
@@ -816,7 +792,7 @@ Duyen
 
 
 file: An answer from the Up Above
-last dream id: D0032
+last dream id: D0029
 Date of dream: 
 Thursday, November 24, 2022
 Angel: 
@@ -846,9 +822,25 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0033",
-    "date": "24-11-2022",
-    "dream_text": "I would like to share with you one of the dreams from Up Above when I keep asking if my boyfriend\nis the right person.\nI came to a relative's house (I just felt that) . The house had a bathroom for a woman in another\nhouse A man and I were in front of our house. He confessed his love to me. I was happy and\nconfused because I also had feelings for him and I was in a relationship with my present boyfriend. I\ndidn't say anything to him. \nI came into the house. I met 3 female friends going to play  badminton .\nThen the man and his male friend came into the house to take a shower . He tries to show his erect penis  to me before going into the\nbathroom. At that moment, my brother was also there. \nI went out of the house to move to the bathroom for women. I didn't remember exactly where the bathroom was.  I went into the wrong\nhouse   where I saw a female was sleeping with a very cold atmosphere from the referee  She woke up and saw me. I apologized to her .\nShe presented the cute things which she was selling I promised to buy them later. Then I went down her staircase. I realized I was lost, I\nforgot the relative's house.",
+    "dream_id": "D0030",
+    "date": "24/11/2022",
+    "dream_text": "I would like to share with you one of the dreams from Up Above when I keep asking if my boyfriend is the right person.\nI came to a relative's house (I just felt that) . The house had a bathroom for a woman in another house A man and I were in front of our house. He confessed his love to me. I was happy and confused because I also had feelings for him and I was in a relationship with my present boyfriend. I didn't say anything to him.",
+    "state_of_mind": "Worried",
+    "notes": "From PDF: An answer from the Up Above"
+  },
+  {
+    "case_id": "C01",
+    "dream_id": "D0031",
+    "date": "24/11/2022",
+    "dream_text": "I came into the house. I met 3 female friends going to play badminton .\nThen the man and his male friend came into the house to take a shower . He tries to show his erect penis to me before going into the bathroom. At that moment, my brother was also there.",
+    "state_of_mind": "Worried",
+    "notes": "From PDF: An answer from the Up Above"
+  },
+  {
+    "case_id": "C01",
+    "dream_id": "D0032",
+    "date": "24/11/2022",
+    "dream_text": "I went out of the house to move to the bathroom for women. I didn't remember exactly where the bathroom was. I went into the wrong house where I saw a female was sleeping with a very cold atmosphere from the referee She woke up and saw me. I apologized to her . She presented the cute things which she was selling I promised to buy them later. Then I went down her staircase. I realized I was lost, I forgot the relative's house.",
     "state_of_mind": "Worried",
     "notes": "From PDF: An answer from the Up Above"
   }
@@ -856,7 +848,7 @@ Duyen
 
 
 file: Try to do the best
-last dream id: D0033
+last dream id: D0032
 Date of dream: 
 Friday, December 2, 2022
 Angel: 
@@ -890,8 +882,8 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0034",
-    "date": "02-12-2022",
+    "dream_id": "D0033",
+    "date": "02/12/2022",
     "dream_text": "My boyfriend and I were in my room in my house . He did not wear clothes .   We went out of the room to go somewhere. My grandfather and my father saw us.  He came back to my room. I talked with them about my boyfriend. They advised me not to do that. ",
     "state_of_mind": "Scared",
     "notes": "From PDF: Try to do the best"
@@ -900,7 +892,7 @@ Duyen
 
 
 file: Finding the License Plate
-last dream id: D0034
+last dream id: D0033
 Date of dream: 
 Tuesday, February 14, 2023
 Angel: 
@@ -930,9 +922,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0035",
-    "date": "14-02-2023",
-    "dream_text": "I went to my relative's house  on my boyfriend motorbike . I drove while my friends rode a bicycle.     The road was terrible. \nI have not come to a specific point. I'm coming back. On my way, there was a point - a low wall . My motorbike could not cross and I\nshould find another road. Two old women wanted me to put my motorbike next to the wall to let them climb over it, but I rejected it.\nThey could climb on its ledges. \nI continue my way. Suddenly I found that the license plate was lost. I must go on the previous track. \nThen I saw the place I crossed but now it was closed to motorbikes. I stopped it. One of the two women kicked the ball to my face . She\ndidn't say sorry. I was angry and shouted at her.",
+    "dream_id": "D0034",
+    "date": "14/02/2023",
+    "dream_text": "I went to my relative's house \t\ton my boyfriend motorbike . I drove while my friends rode a bicycle. \t\t\tThe road was terrible. \nI have not come to a specific point. I'm coming back. On my way, there was a point - a low wall . My motorbike could not cross and I\nshould find another road. Two old women wanted me to put my motorbike next to the wall to let them climb over it, but I rejected it.\nThey could climb on its ledges. \nI continue my way. Suddenly I found that the license plate was lost. I must go on the previous track. \nThen I saw the place I crossed but now it was closed to motorbikes. I stopped it. One of the two women kicked the ball to my face . She\ndidn't say sorry. I was angry and shouted at her.",
     "state_of_mind": "tired, angry, uncomfortable",
     "notes": "From PDF: Finding the License Plate"
   }
@@ -940,7 +932,7 @@ Duyen
 
 
 file: A falling
-last dream id: D0035
+last dream id: D0034
 Date of dream: 
 Thursday, February 23, 2023
 Angel: 
@@ -978,17 +970,9 @@ Duyen 
 [
   {
     "case_id": "C01",
-    "dream_id": "D0036",
-    "date": "23-02-2023",
+    "dream_id": "D0035",
+    "date": "23/02/2023",
     "dream_text": "I, my boyfriend , her younger sister , his cousin-sister , and his cousin-sister's daughter were in a strange place. .  The sister, the\ncousin, the daughter, and I went along a lake . I made the daughter fall into the lake. The baby did not know how to swim. We didn't\nknow how to swim. So we went near the lake and blared to find help. No one appeared.   The daughter was taken near the bank. The\ncousin took her up. The sister said it was my fault. My boyfriend came to the daughter. He didn't notice me. I felt guilty and angry when I\nleft.",
-    "state_of_mind": "Surprise, Angry, Afraid",
-    "notes": "From PDF: A falling"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0037",
-    "date": "23-02-2023",
-    "dream_text": "I am also thinking whether the right time to leave my present job. I shared my thoughts with my manager. He gave me one week to think\nabout it carefully. Because this time is not good to change. My director wants to help me when she heard that I have a question from my\ncolleague. I said it was another time. I notice a point. I am not ready to exchange my opinion with my director.  There is a space and I\nasked myself the reason why I felt that. She is an excellent person in business. She runs her previous factory very well under government\nlaws. She taught my manager very well. She is finding some new projects to expand her business after leaving the factory. I rarely talk\nwith her. Everyone has a life program. I am not right when I looked at her results at the physical level. I should respect her rightly and\nrecognize her qualities and distortions. , I am just besides trying to escape my work more than developing my quality.",
     "state_of_mind": "Surprise, Angry, Afraid",
     "notes": "From PDF: A falling"
   }
@@ -996,7 +980,7 @@ Duyen 
 
 
 file: A broken room
-last dream id: D0037
+last dream id: D0035
 Date of dream: 
 Friday, March 3, 2023
 Angel: 
@@ -1043,9 +1027,9 @@ owner
 [
   {
     "case_id": "C01",
-    "dream_id": "D0038",
-    "date": "03-03-2023",
-    "dream_text": "After going from the toilet I saw my rent room was broken on the roof   I quickly woke up  my roommate . She was safe. We felt angry because the owner did not say to us about this in the previous. My owner appears. She wanted to build a new appearance to earn more money because she kept the old version too long.",
+    "dream_id": "D0036",
+    "date": "03/03/2023",
+    "dream_text": "After going from the toilet I saw my rent room was broken on the roof   I quickly woke up   my roommate . She was safe. We felt angry because the owner did not say to us about this in the previous. My owner appears. She wanted to build a new appearance to earn more money because she kept the old version too long.",
     "state_of_mind": "Surprise, Angry",
     "notes": "From PDF: A broken room"
   }
@@ -1053,7 +1037,7 @@ owner
 
 
 file: I Ching
-last dream id: D0038
+last dream id: D0036
 Date of dream: 
 Friday, March 10, 2023
 Angel: 
@@ -1078,9 +1062,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0039",
-    "date": "10-03-2023",
-    "dream_text": "I met the person  at a place. When he shared a part of myself, he called my female friend - my high schoolmate to join our meeting. \nFrom that point, he taught her his job and ignored me.  There was a friend  which went around the place. Then he went out. We moved to \nanother room. He came back with low energy so he could not share anything with me. ",
+    "dream_id": "D0037",
+    "date": "10/03/2023",
+    "dream_text": "I met the person  at a place. When he shared a part of myself, he called my female friend - my high schoolmate to join our meeting. \nFrom that point, he taught her his job and ignored me.  There was a friend  which went around the place. Then he went out. We moved to\nanother room. He came back with low energy so he could not share anything with me. ",
     "state_of_mind": "Angry, Disappointed",
     "notes": "From PDF: I Ching"
   }
@@ -1088,7 +1072,7 @@ Duyen
 
 
 file: A school
-last dream id: D0039
+last dream id: D0037
 Date of dream: 
 Friday, March 17, 2023
 Angel: 
@@ -1116,32 +1100,32 @@ Duyen
 [
   {
     "case_id": "C01",
+    "dream_id": "D0038",
+    "date": "17/03/2023",
+    "dream_text": "I was in a school . The school was too strict \nFirstly, Some friends and I investigated the death of a beautiful girl  our school. I was chased when\nI tried to solve it.",
+    "state_of_mind": "Afraid",
+    "notes": "From PDF: A school"
+  },
+  {
+    "case_id": "C01",
+    "dream_id": "D0039",
+    "date": "17/03/2023",
+    "dream_text": "my class had almost started but I had not brushed my teeth . I moved out of the\nclassroom to go to the toilet. I moved the movable barrier to get out. But the time was over, so I returned to the class without brushing\nmy teeth.",
+    "state_of_mind": "Afraid",
+    "notes": "From PDF: A school"
+  },
+  {
+    "case_id": "C01",
     "dream_id": "D0040",
-    "date": "17-03-2023",
-    "dream_text": "I was in a school . The school was too strict \nFirstly, Some friends and I investigated the death of a beautiful girl  our school. I was chased when\nI tried to solve it.",
-    "state_of_mind": "Afraid",
-    "notes": "From PDF: A school"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0041",
-    "date": "17-03-2023",
-    "dream_text": "Secondly, my class had almost started but I had not brushed my teeth . I moved out of the\nclassroom to go to the toilet. I moved the movable barrier to get out. But the time was over, so I returned to the class without brushing\nmy teeth.",
-    "state_of_mind": "Afraid",
-    "notes": "From PDF: A school"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0042",
-    "date": "17-03-2023",
+    "date": "17/03/2023",
     "dream_text": "I received a message to move to another better class I have not solved my problem, I have a superior thought, so I moved to another matter . \nMy female teacher checked the message before letting me out.  I went to the new class. In the front of the class, I saw some students\nwho were punished. The male teacher did not want to receive me because the class was full. But I was still there.",
     "state_of_mind": "Afraid",
     "notes": "From PDF: A school"
   },
   {
     "case_id": "C01",
-    "dream_id": "D0043",
-    "date": "17-03-2023",
+    "dream_id": "D0041",
+    "date": "17/03/2023",
     "dream_text": ", I had another dream Besides that I was being chased by something. I wanted to solve it, so I stopped and fought against it. My way was\nnot right, and I died. How can I solve a case in a dream? We will have many cases and many solutions. No patterns for something, right?",
     "state_of_mind": "Afraid",
     "notes": "From PDF: A school"
@@ -1150,7 +1134,7 @@ Duyen
 
 
 file: My Boyfriend s Company
-last dream id: D0043
+last dream id: D0041
 Date of dream: 
 Thursday, March 23, 2023
 Angel: 
@@ -1174,9 +1158,17 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0044",
-    "date": "23-03-2023",
-    "dream_text": "I traveled with my boyfriend's company . We lived in an old boarding house. The first scene, my boyfriend and I brought the bicycle to the house. There was a helpful woman who kept it for us. But I was worried it might be lost and I would like to go somewhere by it so I came back to take it. She said it was locked in a room. A female cleaner brought the key. A couple in my boyfriend's team invited me to go out. I got a stomachache, so I went back to a toilet. His female colleagues lived full a room so I should move to another room. When I had just sat on the toilet, my boyfriend opened the small glass door and talked to me. I felt shy so I requested him close it. Then other people came to my room. I was so shy and I wanted them to leave. But one man said his bathroom was damaged .",
+    "dream_id": "D0042",
+    "date": "23/03/2023",
+    "dream_text": "I traveled with my boyfriend's company . We lived in an old boarding house.\nThe first scene, my boyfriend and I brought the bicycle to the house. There was a helpful woman\nwho kept it for us. But I was worried it might be lost and I would like to go somewhere by it so I came back to take it. She said it was\nlocked in a room. A female cleaner brought the key.",
+    "state_of_mind": "Angry, Disappointed",
+    "notes": "From PDF: My Boyfriend s Company"
+  },
+  {
+    "case_id": "C01",
+    "dream_id": "D0043",
+    "date": "23/03/2023",
+    "dream_text": "A couple in my boyfriend's team invited me to go out. I got a stomachache, so I went back to a toilet.\nHis female colleagues lived full a room so I should move to another room. When I had just sat on the toilet, my boyfriend opened the\nsmall glass door and talked to me. I felt shy so I requested him close it. Then other people came to my room. I was so shy and I wanted\nthem to leave. But one man said his bathroom was damaged .",
     "state_of_mind": "Angry, Disappointed",
     "notes": "From PDF: My Boyfriend s Company"
   }
@@ -1184,7 +1176,7 @@ Duyen
 
 
 file: The Newspaper having my name
-last dream id: D0044
+last dream id: D0043
 Date of dream: 
 Monday, March 21, 2022
 Angel: 
@@ -1217,9 +1209,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0045",
-    "date": "21-03-2022",
-    "dream_text": "I would like to share a dream for this week. This dream appeared when I watched the Good Doctors on Netflix\nAfter school, I went to the library where Dr. Glassman is a bookkeeper. I was looking for my name in a newspaper . I also felt that I\nalmost found that. But I have not seen it. Some friends had the same purpose as me.  Then a person, Hoang , found the newspaper\nhaving his name.  We finding continued over lunch. Dr. Glassman went to take the lunch and reminded us of having lunch. I still paid\nattention to finding it in anger because I nearly had it. I would do it quickly to come home and my mother would not be angry with me.\nAfter looking for a long time, I felt hungry so I stopped to eat.  I came out and met Dr. Glassman came back, I also saw our school was\npreparing for the final meeting. I saw many teachers were walking. One of them was Nhan , a homeroom teacher. He was coming back to\nthe room for homeroom teachers. I remembered I have not completed the exercises from Dr. Glassman. He gave them to me at the end\nof this morning. I continued looking for the newspaper.  I brought high newspapers on a window to check but nothing. I realized the\nexercises are more important than looking.",
+    "dream_id": "D0044",
+    "date": "21/03/2022",
+    "dream_text": "I would like to share a dream for this week. This dream appeared when I watched the Good Doctors\non Netflix\nAfter school, I went to the library where Dr. Glassman is a bookkeeper. I was looking for my name in a newspaper . I also felt that I\nalmost found that. But I have not seen it. Some friends had the same purpose as me.   Then a person, Hoang , found the newspaper\nhaving his name.   We finding continued over lunch. Dr. Glassman went to take the lunch and reminded us of having lunch. I still paid\nattention to finding it in anger because I nearly had it. I would do it quickly to come home and my mother would not be angry with me.\nAfter looking for a long time, I felt hungry so I stopped to eat.   I came out and met Dr. Glassman came back, I also saw our school was\npreparing for the final meeting. I saw many teachers were walking. One of them was Nhan , a homeroom teacher. He was coming back to\nthe room for homeroom teachers. I remembered I have not completed the exercises from Dr. Glassman. He gave them to me at the end\nof this morning. I continued looking for the newspaper.   I brought high newspapers on a window to check but nothing. I realized the\nexercises are more important than looking.",
     "state_of_mind": "Impatient, tired",
     "notes": "From PDF: The Newspaper having my name"
   }
@@ -1227,7 +1219,7 @@ Duyen
 
 
 file: Visiting a cinema
-last dream id: D0045
+last dream id: D0044
 Date of dream: 
 Monday, March 28, 2022
 Angel: 
@@ -1263,16 +1255,16 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0046",
-    "date": "28-03-2022",
-    "dream_text": "My father and I went to a cinema by motorbike.  We stopped at the parking lot which was opposite the cinema and at the foot-slope.  There were two female street vendors offering us food and drink too much. Then we agreed to buy and we ate there.  My father suddenly wanted to gamble with the lotteries  of the vendor. He lost. When everything becomes difficult, I will just do a new thing with a hope of luck and lack of going deeply to clean the negative memories.   After eating, my father and I left the waste for the vendor We also received a reminder of cleaning from a female guard standing far from us but we still continued. The vendor did not clean and left. ",
+    "dream_id": "D0045",
+    "date": "28/03/2022",
+    "dream_text": "My father and I went to a cinema by motorbike.  We stopped at the parking lot which was opposite the cinema and at the foot-slope.  There were two female street vendors offering us food and drink too much. Then we agreed to buy and we ate there.  My father suddenly wanted to gamble with the lotteries  of the vendor. He lost. When everything becomes difficult, I will just do a new thing with a hope of luck and lack of going deeply to clean the negative memories.   After eating, my father and I left the waste for the vendor We also received a reminder of cleaning from a female guard standing far from us but we still continued. The vendor did not clean and left.",
     "state_of_mind": "Afraid",
     "notes": "From PDF: Visiting a cinema"
   },
   {
     "case_id": "C01",
-    "dream_id": "D0047",
-    "date": "28-03-2022",
+    "dream_id": "D0046",
+    "date": "28/03/2022",
     "dream_text": "My mother and I went to a cinema by motorbike. Inside of me, I continue comparing myself with others.  An old girlfriend appeared and went with us.  My ex-boyfriend wanted to meet me but I rejected and he followed us . My mother and I left our motorbike at a parking lot and walked to the cinema. The cinema was crowded. There were many people walking too.  The old girlfriend told me a story about my ex-boyfriend. When I was taken to a country, he betrayed this country to take me back .  My mother and I saw a crowd. I saw my boyfriend fixing his motorbike with my brother. The motorbike has a chain trouble.  He tried to watch the movie with us. Two girl strangers  told me his other problem - crossing the red light and getting punished. I was angry because he didn't tell me.  Before bringing his motorbike to be fixed, he and I came to the cinema to buy a ticket for him. I did not want him to watch because I did not want him to see my ex-boyfriend.  At the main door, there was a stranger who gave us a ticket - 30 thousand VND. I realized my ex-boyfriend was behind the scene. I rejected buying  My boyfriend and I came to the ticket office. There were 2 women who sold the tickets for a couple",
     "state_of_mind": "Afraid",
     "notes": "From PDF: Visiting a cinema"
@@ -1281,7 +1273,7 @@ Duyen
 
 
 file: In a forest
-last dream id: D0047
+last dream id: D0046
 Date of dream: 
 Wednesday, April 6, 2022
 Angel: 
@@ -1310,41 +1302,33 @@ Duyen
 [
   {
     "case_id": "C01",
+    "dream_id": "D0047",
+    "date": "06/04/2022",
+    "dream_text": "My boyfriend and I came into a forest to challenge our abilities to join the nation .  We went to a\n waterfall with a guide to test the ability to use bows . My boyfriend went somewhere so the guide\n and I waited at a big stone .",
+    "state_of_mind": "Interesting, Afraid",
+    "notes": "From PDF: In a forest"
+  },
+  {
+    "case_id": "C01",
     "dream_id": "D0048",
-    "date": "06-04-2022",
-    "dream_text": "My boyfriend and I came into a forest to challenge our abilities to join the nation .  We went to a\nwaterfall with a guide to test the ability to use bows . My boyfriend went somewhere so the guide\nand I waited at a big stone .",
+    "date": "06/04/2022",
+    "dream_text": "Then my boyfriend and I lived in an old, abandoned abandoned building with some people.  When\n a group of people came to our place to provoke, the men moved to another building to fight the\n group.  I had the intention to fight but the men did not accept because I was a woman.  A man from\n the group was lost, he loved a girl from our place so he decided to live in our place.",
     "state_of_mind": "Interesting, Afraid",
     "notes": "From PDF: In a forest"
   },
   {
     "case_id": "C01",
     "dream_id": "D0049",
-    "date": "06-04-2022",
-    "dream_text": "Then my boyfriend and I lived in an old, abandoned abandoned building with some people.  When\na group of people came to our place to provoke, the men moved to another building to fight the\ngroup.   I had the intention to fight but the men did not accept because I was a woman.  A man from\nthe group was lost, he loved a girl from our place so he decided to live in our place.",
+    "date": "06/04/2022",
+    "dream_text": "I took a walk around a lake with a girl . Her boyfriend came and said sorry to her because he could not keep his promise. She was angry\n and came back to her room.",
     "state_of_mind": "Interesting, Afraid",
     "notes": "From PDF: In a forest"
   },
   {
     "case_id": "C01",
     "dream_id": "D0050",
-    "date": "06-04-2022",
-    "dream_text": "I took a walk around a lake with a girl . Her boyfriend came and said sorry to her because he could not keep his promise. She was angry\nand came back to her room.",
-    "state_of_mind": "Interesting, Afraid",
-    "notes": "From PDF: In a forest"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0051",
-    "date": "06-04-2022",
-    "dream_text": "Then the men fighting won.They brought back the spoilers  I came back to my room was avoiding a person who was leading a bear so I\ncame into a room which was near my room and was raising a lion cub . I was started.   I threatened the lion so it wouldn't bite me. ",
-    "state_of_mind": "Interesting, Afraid",
-    "notes": "From PDF: In a forest"
-  },
-  {
-    "case_id": "C01",
-    "dream_id": "D0052",
-    "date": "06-04-2022",
-    "dream_text": "A girl and I ran into a forest to hide and then we went baking.",
+    "date": "06/04/2022",
+    "dream_text": "Then the men fighting won.They brought back the spoilers  I came back to my room was avoiding a person who was leading a bear so I\n came into a room which was near my room and was raising a lion cub . I was started.  I threatened the lion so it wouldn't bite me.\n A girl and I ran into a forest to hide and then we went baking.",
     "state_of_mind": "Interesting, Afraid",
     "notes": "From PDF: In a forest"
   }
@@ -1352,7 +1336,7 @@ Duyen
 
 
 file: Coming back to my rent room
-last dream id: D0052
+last dream id: D0050
 Date of dream: 
 Thursday, April 14, 2022
 Angel: 
@@ -1400,9 +1384,9 @@ The owner of this building
 [
   {
     "case_id": "C01",
-    "dream_id": "D0053",
-    "date": "14-04-2022",
-    "dream_text": "I was normal on the way from my company to my rented room .  The police caught me so I found another way.  I felt hesitant when I drove into a strange road   I saw my brother and some people crossing me. I followed them and I drove to the end of that road. It was a government building.  I drove up some floors by stairs but I could not find the way out.  I had the intention to fly across a wall.  Finally, I ran to the back of the building to get out. The owner of this building caught and asked me. I was very annoyed. I was wrong but still stiff, uncooperative.",
+    "dream_id": "D0051",
+    "date": "14/04/2022",
+    "dream_text": "I was normal on the way from my company to my rented room .  The police caught me so I found another way.   I felt hesitant when I drove into a strange road   I saw my brother and some people crossing me. I followed them and I drove to the end of that road. It was a government building.  I drove up some floors by stairs but I could not find the way out.  I had the intention to fly across a wall.   Finally, I ran to the back of the building to get out. The owner of this building caught and asked me. I was very annoyed. I was wrong but still stiff, uncooperative.",
     "state_of_mind": "null",
     "notes": "From PDF: Coming back to my rent room"
   }
@@ -1410,7 +1394,7 @@ The owner of this building
 
 
 file: A goodbye
-last dream id: D0053
+last dream id: D0051
 Date of dream: 
 Monday, April 18, 2022
 Angel: 
@@ -1445,9 +1429,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0054",
-    "date": "18-04-2022",
-    "dream_text": "Three families had an appointment at my grandfather's house  Three fathers had a good relationship. They chatted and had some games together. This was the last time for all of them.\nOne of three families only had a father, 2 daughters and a cat . The father would go somewhere, one daughter would buy rice with the mother for donation, one daughter would go somewhere then come back to meet the mother. ..  . I was the final person leaving   When I had just left in the afternoon, I saw the cat in the room. I push the cat coming out because this room would close too long, the cat would die when it did not have food The cat came out of this room but it did not come out of the house . But I saw a way to get out for the cat so\n\nI let it there. It clung to me and didn't want to break up. I met a friend who came and chatted with him a little. Then I came to another part\nof this house and met my cousin who I really liked.I share the appointment with him and leave.  I do not realize the meaning of the final\nscene. The friend I see is a stranger. He is a man. Is it a part from my unconscious related to my action, a strange action? The cousin is a man too,\nbut I do not remember who he is, I just know I really like him. I come back to my old behavior? Waiting for your sharing",
+    "dream_id": "D0052",
+    "date": "18/04/2022",
+    "dream_text": "Three families had an appointment at my grandfather's house  Three fathers had a good relationship. They chatted and had some games together. This was the last time for all of them.\nOne of three families only had a father, 2 daughters and a cat . The father would go somewhere, one daughter would buy rice with the mother for donation, one daughter would go somewhere then come back to meet the mother. ..  . I was the final person leaving   When I had just left in the afternoon, I saw the cat in the room. I push the cat coming out because this room would close too long, the cat would die when it did not have food The cat came out of this room but it did not come out of the house . But I saw a way to get out for the cat so\nI let it there. It clung to me and didn't want to break up. I met a friend who came and chatted with him a little. Then I came to another part of this house and met my cousin who I really liked.I share the appointment with him and leave.  I do not realize the meaning of the final scene. The friend I see is a stranger. He is a man. Is it a part from my unconscious related to my action, a strange action? The cousin is a man too, but I do not remember who he is, I just know I really like him. I come back to my old behavior? Waiting for your sharing",
     "state_of_mind": "Neutral",
     "notes": "From PDF: A goodbye"
   }
@@ -1455,7 +1439,7 @@ Duyen
 
 
 file: Against the Black Organization
-last dream id: D0054
+last dream id: D0052
 Date of dream: 
 Tuesday, April 26, 2022
 Angel: 
@@ -1489,9 +1473,9 @@ Duyen
 [
   {
     "case_id": "C01",
-    "dream_id": "D0055",
-    "date": "26-04-2022",
-    "dream_text": "I came to a food store which had a large sitting area\n with 2 men and 1 woman . We were choosing our food. I was watching fish dishes\n and I chose a fried fish that was too dried and crispy. Others were still choosing and giving me money\n to make payment.\n\nWe saw our enemy \nWe ran away. I hid below a table . The enemy is a woman wearing black clothes . She caught me. . I left money on the\n table to pay for our food.\nI was released and returned to the base. I talked with my boss then I came back to my place. ...I met my boyfriend and he hugged me and\n said we were alone.",
+    "dream_id": "D0053",
+    "date": "26/04/2022",
+    "dream_text": "I came to a food store which had a large sitting area  with 2 men and 1 woman . We were choosing our food. I was watching fish dishes and I chose a fried fish that was too dried and crispy. Others were still choosing and giving me money  to make payment.\n\nWe saw our enemy  We ran away. I hid below a table . The enemy is a woman wearing black clothes . She caught me. . I left money on the table to pay for our food.\nI was released and returned to the base. I talked with my boss then I came back to my place. ...I met my boyfriend and he hugged me and said we were alone.",
     "state_of_mind": "Afraid",
     "notes": "From PDF: Against the Black Organization"
   }

@@ -24,11 +24,8 @@ def write_excel(file_name: str, data: list):
   wb.save(f"{folder/file_name}.xlsx")
   print(f"Excel file created: {folder/file_name}.xlsx")  
  
-def write_csv(rows: list[Dream]):
-  """
-  rows: iterable of dicts where keys match FIELDNAMES
-  Creates the file and writes a header if it doesn't exist or is empty.
-  """
+def write_csv(rows: list[Dream]):  
+  
     
   rows = [r.model_dump() for r in rows]
   

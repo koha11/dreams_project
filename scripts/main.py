@@ -32,7 +32,7 @@ if __name__ == "__main__":
       continue
     
     last_dream_id = res[-1].dream_id
-    
+        
     write_csv(res)
 
     write_output("\n\n")
