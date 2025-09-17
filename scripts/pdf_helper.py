@@ -3,42 +3,21 @@ import re
 import fitz
 from typing import Iterable, List, Dict, Optional
 
-from pydantic import BaseModel
-
 from output_helper import write_output  # PyMuPDF
-from google import genai
-from google.genai import types
 
-from dotenv import load_dotenv, find_dotenv
+from my_type import CHOOSEN_MODEL, INPUT_PATH, Dream
+from ai_helper import groq_prompt
 
-from my_type import Dream, RateLimiter
-
-load_dotenv(find_dotenv())  # loads .env into process env
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-folder = BASE_DIR / "data/D"
-
-# Tạo limiter: 30 req / 60s
-_rate_limiter_30_per_min = RateLimiter(30, 60.0) # gemini-2.0-flash-lite
-
-# Tạo limiter: 15 req / 60s
-_rate_limiter_15_per_min = RateLimiter(15, 60.0) # gemini-2.5-flash-lite
-
-# Tạo limiter: 10 req / 60s
-_rate_limiter_10_per_min = RateLimiter(10, 60.0) # gemini-2.5-flash
 
 def readPdf(sub_folder, file_name, output_file_name, last_dream_id="D0000") -> List[Dream]:
     id, file_path, date_from_filename, title_guess, dream_text, error = (None, None, None, None, None, None)
-    file_path: Path = folder / sub_folder / file_name
+    file_path: Path = INPUT_PATH / sub_folder / file_name
     doc = fitz.open(file_path)
     id, date_from_filename, title_pdf = parse_filename(file_name)
     text = ""
     for i, page in enumerate(doc):
         text += page.get_text()
-        # write_output(f"\n--- RAW Page {i+1} ---\n")
-        # write_output(page.get_text())
 
-    # return parse_pdf_text_to_dreams(extract_clean_block(text), title_guess)
     text = extract_clean_block(text)
     
     text = f"file: {title_pdf}; last dream id: {last_dream_id}; {text}"
@@ -46,11 +25,31 @@ def readPdf(sub_folder, file_name, output_file_name, last_dream_id="D0000") -> L
     text = clean_dream_text(text)
 
     write_output(text, output_file_name)
-    return llm_filter_dream_text(text, output_file_name)
-    # dream_text = extract_clean_block(text)
-        
-    # file_path = file_path.as_posix()
-    # return id, file_path, date_from_filename, title_guess, dream_text, error
+    
+    return llm_filter_dream_text(text, output_file_name, title_pdf)
+
+def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str, title_pdf: str) -> str:
+    
+    system_instruction = """
+        công việc của bạn là nhận dữ liệu text được đọc từ 1 file pdf (nội dung của pdf chủ yếu là về những giấc mơ), 
+        và bạn có nhiệm vụ phải chắt lọc lấy đúng phần nội dung của giấc mơ trong đoạn text đó, với các yêu cầu sau:
+        - tôi muốn trả về 1 mảng JSON gồm các giấc mơ có trong đoạn text trên, 
+        1 giấc mơ có 6 key case_id, dream_id, date, dream_text, state_of_mind, notes, 
+        với case_id mặc định là C01, notes là From PDF: title_pdf, 
+        dream_id có format là Dxxxx (x là số, ví dụ D0001, D0002,...) và phải bắt đầu từ id trước đó (được cung cấp trong văn bản),
+        date thì lấy theo định dạng dd/mm/yyyy,
+        phần dream_text là quan trọng nhất, bạn phải lấy chính xác từng dream riêng biệt,
+        và nội dung phải y hệt với văn bản gốc (loại bỏ các ký tự escapse, các từ để liệt kê như my first dream is, second dream,... hay các chỉ mục 1., 2., ...),
+        """
+    
+    # data = gemini_prompt(dream_text, OUTPUT_FILENAME, system_instruction, CHOOSEN_MODEL)
+    data = groq_prompt(dream_text, OUTPUT_FILENAME, system_instruction, CHOOSEN_MODEL, title_pdf)
+
+    data = [Dream(**d) for d in data]
+    data = update_dreams(data)
+
+    return data
+
 
 def parse_filename(file_name: str):
     # Bỏ đuôi .pdf        
@@ -264,48 +263,6 @@ def parse_pdf_text_to_dreams(
         })
 
     return dreams
-
-def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str) -> str:
-    """
-    Use LLM to filter out non-dream content from dream_text.
-    Placeholder function - implement LLM call as needed.
-    """    
-
-    # chặn tốc độ: tối đa 15 request/phút cho mọi thread trong tiến trình
-    _rate_limiter_15_per_min.acquire()
-
-    client = genai.Client()
-
-    config = types.GenerateContentConfig(
-        system_instruction="""
-        công việc của bạn là nhận dữ liệu text được đọc từ 1 file pdf (nội dung của pdf chủ yếu là về những giấc mơ), 
-        và bạn có nhiệm vụ phải chắt lọc lấy đúng phần nội dung của giấc mơ trong đoạn text đó, với các yêu cầu sau:
-        - tôi muốn trả về 1 mảng JSON gồm các giấc mơ có trong đoạn text trên, 
-        1 giấc mơ có 6 key case_id, dream_id, date, dream_text, state_of_mind, notes, 
-        với case_id mặc định là C01, notes là From PDF: title_pdf, 
-        dream_id có format là Dxxxx (x là số, ví dụ D0001, D0002,...) và phải bắt đầu từ id trước đó (được cung cấp trong văn bản),
-        date thì lấy theo định dạng dd/mm/yyyy,
-        phần dream_text là quan trọng nhất, bạn phải lấy chính xác từng dream riêng biệt,
-        và nội dung phải y hệt với văn bản gốc (loại bỏ các ký tự escapse, các từ để liệt kê như my first dream is, second dream,... hay các chỉ mục 1., 2., ...),
-        """,
-        thinking_config=types.ThinkingConfig(thinking_budget=0),
-        response_mime_type="application/json",
-        response_schema=list[Dream],
-    )
-    
-    models = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash-lite", "gemini-2.0-flash"]
-    
-    model = models[1]
-    
-    response = client.models.generate_content(
-        model= model, contents=dream_text, config=config
-    )    
-    
-    data: List[Dream] = response.parsed
-    
-    write_output(f"\n{response.text}\n", OUTPUT_FILENAME)
-        
-    return update_dreams(data)
 
 def update_dreams(dreams: Iterable[Dream]) -> List[Dream]:
     return [

@@ -1,8 +1,23 @@
+from enum import Enum
+from pathlib import Path
 import threading
 from pydantic import BaseModel
 import time
 from collections import deque
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+INPUT_PATH = BASE_DIR / "data/D"
+OUTPUT_PATH = BASE_DIR / "outputs"
+
+class GEMINI_MODEL(Enum):
+    GEMINI_2_5_FLASH = "gemini-2.5-flash"
+    GEMINI_2_5_FLASH_LITE = "gemini-2.5-flash-lite"
+    GEMINI_2_0_FLASH_LITE = "gemini-2.0-flash-lite"
+    GEMINI_2_0_FLASH = "gemini-2.0-flash"
+    
+class GROQ_MODEL(Enum):
+    LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
+    LLAMA_3_3_70B_VERSATILE = "llama-3.3-70b-versatile"
 
 class Dream(BaseModel):
   case_id: str
@@ -12,7 +27,7 @@ class Dream(BaseModel):
   state_of_mind: str
   notes: str
   
-  # --- Rate limiter chung cho toàn module ---
+# --- Rate limiter chung cho toàn module ---
 class RateLimiter:
     def __init__(self, max_calls: int, period_seconds: float):
         self.max_calls = max_calls
@@ -40,3 +55,5 @@ class RateLimiter:
         # ghi nhận lần gọi mới sau khi (có thể) đã ngủ
         with self._lock:
             self._calls.append(time.monotonic())
+
+CHOOSEN_MODEL = GROQ_MODEL.LLAMA_3_1_8B_INSTANT

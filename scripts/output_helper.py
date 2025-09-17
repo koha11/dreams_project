@@ -1,14 +1,12 @@
 from pathlib import Path
-from pprint import pprint
 from openpyxl import Workbook
 import csv
-from my_type import Dream
-from datetime import datetime
+from my_type import OUTPUT_PATH, Dream
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-folder = BASE_DIR / "outputs"
-CSV_FILE = Path(folder / "clean.csv")
+
+CSV_FILE = Path(OUTPUT_PATH / "clean.csv")
 CSV_FIELDNAMES = ["case_id", "dream_id", "date", "dream_text", "state_of_mind", "notes"]
 
 def write_excel(file_name: str, data: list):
@@ -22,11 +20,11 @@ def write_excel(file_name: str, data: list):
     ws.append(row)
       
   # Lưu file
-  wb.save(f"{folder/file_name}.xlsx")
-  print(f"Excel file created: {folder/file_name}.xlsx")  
+  wb.save(f"{OUTPUT_PATH/file_name}.xlsx")
+  print(f"Excel file created: {OUTPUT_PATH/file_name}.xlsx")  
  
 def write_csv(rows: list[Dream], file_name: str ):     
-  csv_file = Path(folder / file_name)   
+  csv_file = Path(OUTPUT_PATH / file_name)   
   rows = [r.model_dump() for r in rows]
 
   with csv_file.open(mode="a", encoding="utf-8", newline="") as f:
@@ -35,7 +33,7 @@ def write_csv(rows: list[Dream], file_name: str ):
   print(f"Output written to {csv_file.as_posix()}")
 
 def initCSV(file_name):
-  csv_file = Path(folder / file_name)
+  csv_file = Path(OUTPUT_PATH / file_name)
   with open(csv_file, "w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)
     writer.writeheader()
@@ -50,12 +48,12 @@ def read_rows():
     return list(reader)
   
 def write_output(text: str, file_name: str = "output"):
-  output_path = folder / file_name
+  output_path = OUTPUT_PATH / file_name
   with open(output_path, "a", encoding="utf-8") as f:
     f.write(text)
   print(f"Output written to {output_path}")
   
 def clear_output(file_name):
-  output_path = folder / file_name
+  output_path = OUTPUT_PATH / file_name
   with open(output_path, "w", encoding="utf-8") as f:
     f.write("")  # Ghi đè với nội dung rỗng
