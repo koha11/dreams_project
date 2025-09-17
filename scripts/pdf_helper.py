@@ -11,15 +11,23 @@ from google.genai import types
 
 from dotenv import load_dotenv, find_dotenv
 
-from my_type import Dream
+from my_type import Dream, RateLimiter
 
 load_dotenv(find_dotenv())  # loads .env into process env
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-folder = BASE_DIR / "data/sample"
-    
+folder = BASE_DIR / "data/D"
 
-def readPdf(sub_folder, file_name, last_dream_id="D0000") -> List[Dream]:
+# Tạo limiter: 30 req / 60s
+_rate_limiter_30_per_min = RateLimiter(30, 60.0) # gemini-2.0-flash-lite
+
+# Tạo limiter: 15 req / 60s
+_rate_limiter_15_per_min = RateLimiter(15, 60.0) # gemini-2.5-flash-lite
+
+# Tạo limiter: 10 req / 60s
+_rate_limiter_10_per_min = RateLimiter(10, 60.0) # gemini-2.5-flash
+
+def readPdf(sub_folder, file_name, output_file_name, last_dream_id="D0000") -> List[Dream]:
     id, file_path, date_from_filename, title_guess, dream_text, error = (None, None, None, None, None, None)
     file_path: Path = folder / sub_folder / file_name
     doc = fitz.open(file_path)
@@ -33,10 +41,12 @@ def readPdf(sub_folder, file_name, last_dream_id="D0000") -> List[Dream]:
     # return parse_pdf_text_to_dreams(extract_clean_block(text), title_guess)
     text = extract_clean_block(text)
     
-    text = f"file: {title_pdf}\nlast dream id: {last_dream_id}\n{text}"
+    text = f"file: {title_pdf}; last dream id: {last_dream_id}; {text}"
     
-    write_output(text)
-    return llm_filter_dream_text(text)
+    text = clean_dream_text(text)
+
+    write_output(text, output_file_name)
+    return llm_filter_dream_text(text, output_file_name)
     # dream_text = extract_clean_block(text)
         
     # file_path = file_path.as_posix()
@@ -255,11 +265,15 @@ def parse_pdf_text_to_dreams(
 
     return dreams
 
-def llm_filter_dream_text(dream_text: str) -> str:
+def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str) -> str:
     """
     Use LLM to filter out non-dream content from dream_text.
     Placeholder function - implement LLM call as needed.
     """    
+
+    # chặn tốc độ: tối đa 15 request/phút cho mọi thread trong tiến trình
+    _rate_limiter_15_per_min.acquire()
+
     client = genai.Client()
 
     config = types.GenerateContentConfig(
@@ -278,14 +292,18 @@ def llm_filter_dream_text(dream_text: str) -> str:
         response_mime_type="application/json",
         response_schema=list[Dream],
     )
-
+    
+    models = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash-lite", "gemini-2.0-flash"]
+    
+    model = models[1]
+    
     response = client.models.generate_content(
-        model="gemini-2.0-flash-lite", contents=dream_text, config=config
+        model= model, contents=dream_text, config=config
     )    
     
     data: List[Dream] = response.parsed
     
-    write_output(f"\n{response.text}\n")
+    write_output(f"\n{response.text}\n", OUTPUT_FILENAME)
         
     return update_dreams(data)
 

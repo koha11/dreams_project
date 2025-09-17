@@ -3,12 +3,13 @@ from pprint import pprint
 from openpyxl import Workbook
 import csv
 from my_type import Dream
+from datetime import datetime
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 folder = BASE_DIR / "outputs"
 CSV_FILE = Path(folder / "clean.csv")
 CSV_FIELDNAMES = ["case_id", "dream_id", "date", "dream_text", "state_of_mind", "notes"]
-
 
 def write_excel(file_name: str, data: list):
   # Tạo workbook mới
@@ -24,21 +25,21 @@ def write_excel(file_name: str, data: list):
   wb.save(f"{folder/file_name}.xlsx")
   print(f"Excel file created: {folder/file_name}.xlsx")  
  
-def write_csv(rows: list[Dream]):  
-  
-    
+def write_csv(rows: list[Dream], file_name: str ):     
+  csv_file = Path(folder / file_name)   
   rows = [r.model_dump() for r in rows]
-  
-  with CSV_FILE.open(mode="a", encoding="utf-8", newline="") as f:
-    writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)      
-    writer.writerows(rows)
-  print(f"Output written to {CSV_FILE.name}")
 
-def clear_csv():
-  with open(CSV_FILE, "w", encoding="utf-8", newline="") as f:
+  with csv_file.open(mode="a", encoding="utf-8", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)
+    writer.writerows(rows)
+  print(f"Output written to {csv_file.as_posix()}")
+
+def initCSV(file_name):
+  csv_file = Path(folder / file_name)
+  with open(csv_file, "w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)
     writer.writeheader()
-  print(f"Output written to {CSV_FILE.name}")
+  print(f"Output written to {csv_file.as_posix()}")
 
 def read_rows():
   """Returns a list of dicts (each row keyed by FIELDNAMES)."""
@@ -48,14 +49,13 @@ def read_rows():
     reader = csv.DictReader(f)
     return list(reader)
   
-def write_output(text: str, file_name: str = "output.txt"):
+def write_output(text: str, file_name: str = "output"):
   output_path = folder / file_name
   with open(output_path, "a", encoding="utf-8") as f:
     f.write(text)
   print(f"Output written to {output_path}")
   
-def clear_output(file_name: str = "output.txt"):
+def clear_output(file_name):
   output_path = folder / file_name
   with open(output_path, "w", encoding="utf-8") as f:
     f.write("")  # Ghi đè với nội dung rỗng
-  print(f"Output file cleared: {output_path}")
