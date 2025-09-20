@@ -56,4 +56,6 @@ class RateLimiter:
         with self._lock:
             self._calls.append(time.monotonic())
 
-CHOOSEN_MODEL = GROQ_MODEL.LLAMA_3_1_8B_INSTANT
+# CHOOSEN_MODEL = GROQ_MODEL.LLAMA_3_1_8B_INSTANT
+CHOOSEN_MODEL = GEMINI_MODEL.GEMINI_2_5_FLASH_LITE
+

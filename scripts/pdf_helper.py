@@ -1,15 +1,17 @@
 from pathlib import Path
 import re
-import fitz
+
 from typing import Iterable, List, Dict, Optional
+
+import fitz  # PyMuPDF
 
 from output_helper import write_output  # PyMuPDF
 
 from my_type import CHOOSEN_MODEL, INPUT_PATH, Dream
-from ai_helper import groq_prompt
+from ai_helper import gemini_prompt, groq_prompt
 
 
-def readPdf(sub_folder, file_name, output_file_name, last_dream_id="D0000") -> List[Dream]:
+def readPdf(sub_folder, file_name, output_file_name, last_case_id="D0000") -> List[Dream]:
     id, file_path, date_from_filename, title_guess, dream_text, error = (None, None, None, None, None, None)
     file_path: Path = INPUT_PATH / sub_folder / file_name
     doc = fitz.open(file_path)
@@ -19,67 +21,71 @@ def readPdf(sub_folder, file_name, output_file_name, last_dream_id="D0000") -> L
         text += page.get_text()
 
     text = extract_clean_block(text)
-    
-    text = f"file: {title_pdf}; last dream id: {last_dream_id}; {text}"
-    
+
+    text = f"title_pdf: {title_pdf}. last case id: {last_case_id}. PDF text: {text}"
+
     text = clean_dream_text(text)
 
     write_output(text, output_file_name)
     
     return llm_filter_dream_text(text, output_file_name, title_pdf)
 
-def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str, title_pdf: str) -> str:
+def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str, title_pdf: str) -> str:    
     
-    system_instruction = """
-        công việc của bạn là nhận dữ liệu text được đọc từ 1 file pdf (nội dung của pdf chủ yếu là về những giấc mơ), 
-        và bạn có nhiệm vụ phải chắt lọc lấy đúng phần nội dung của giấc mơ trong đoạn text đó, với các yêu cầu sau:
-        - tôi muốn trả về 1 mảng JSON gồm các giấc mơ có trong đoạn text trên, 
-        1 giấc mơ có 6 key case_id, dream_id, date, dream_text, state_of_mind, notes, 
-        với case_id mặc định là C01, notes là From PDF: title_pdf, 
-        dream_id có format là Dxxxx (x là số, ví dụ D0001, D0002,...) và phải bắt đầu từ id trước đó (được cung cấp trong văn bản),
-        date thì lấy theo định dạng dd/mm/yyyy,
-        phần dream_text là quan trọng nhất, bạn phải lấy chính xác từng dream riêng biệt,
-        và nội dung phải y hệt với văn bản gốc (loại bỏ các ký tự escapse, các từ để liệt kê như my first dream is, second dream,... hay các chỉ mục 1., 2., ...),
-        """
-    
-    # data = gemini_prompt(dream_text, OUTPUT_FILENAME, system_instruction, CHOOSEN_MODEL)
-    data = groq_prompt(dream_text, OUTPUT_FILENAME, system_instruction, CHOOSEN_MODEL, title_pdf)
+    data = gemini_prompt(dream_text, OUTPUT_FILENAME, CHOOSEN_MODEL)
+    # data = groq_prompt(dream_text, OUTPUT_FILENAME, CHOOSEN_MODEL, title_pdf)
 
-    data = [Dream(**d) for d in data]
     data = update_dreams(data)
 
     return data
 
 
 def parse_filename(file_name: str):
-    # Bỏ đuôi .pdf        
-    if file_name.lower().endswith(".pdf"):
-        file_name = file_name[:-4]
-    RX = re.compile(r"""
-    ^\s*
-    (?P<id>\d{1,3})          # ID ở đầu
-    [\s.\-)]*                # dấu ngăn cách sau ID: space/dot/...
-    (?P<code>[A-Za-z]+)      # 1+ chữ cái (D, DL, A, ...)
-    (?:[._\s]+)              # theo sau là . hoặc space hoặc _
-    (?P<title>.*?)           # title (lấy ngắn nhất)
-    [\s_,-]*                 # ngăn cách trước năm
-    (?P<year>\d{4})          # năm 4 chữ số
-    \s*                      # khoảng trắng cuối (nếu có)
-    (?:\.pdf)?               # đuôi .pdf (tùy chọn để linh hoạt)
-    \s*$
-    """, re.VERBOSE | re.IGNORECASE)
-    
-    m = RX.match(file_name)
-    
-    if not m:
-        return "", "", ""
-    
-    id = int(m.group("id"))
-    date_from_filename = int(m.group("year"))
-    # Chuẩn hoá title: đổi _ -> space, gộp khoảng trắng
-    title_guess = m.group("title").replace("_", " ")
-    title_guess = re.sub(r"\s+", " ", title_guess).strip()
-    return id, date_from_filename, title_guess
+
+    # Bỏ đuôi .pdf (nếu có)
+    base = file_name[:-4] if file_name.lower().endswith(".pdf") else file_name
+
+    # Tìm năm 4 chữ số ở cuối
+    m_year = re.search(r"(\d{4})\s*$", base)
+    if not m_year:
+        # Không có năm => cố gắng vẫn trả về title
+        return [], None, re.sub(r"[_\s]+", " ", base).strip(" ._-")
+
+    year = int(m_year.group(1))
+    left = base[:m_year.start()]  # phần còn lại bên trái năm
+
+    # Bắt chuỗi các ID ở đầu (1–3 chữ số), cho phép ngăn cách bằng ., ), -, hoặc khoảng trắng
+    m_ids = re.match(r"^\s*((?:\d{1,3}[\s.\-)]*)+)", left)
+    ids: List[int] = []
+    rest = left
+
+    if m_ids:
+        # Lấy tất cả số trong block ID đầu chuỗi
+        ids = [int(x) for x in re.findall(r"\d{1,3}", m_ids.group(1))]
+        rest = left[m_ids.end():]  # phần sau cụm ID
+
+    # Sau cụm ID thường là mã (D, DL, A, ...), rồi tới title
+    # VD: "DL_Working with a right discernment _ " -> code="DL", title thô phía sau
+    m_code_title = re.match(
+        r"""^\s*                # bỏ khoảng trắng
+            (?:(?P<code>[A-Za-z]+)   # mã chữ (tùy chọn)
+            [._\s]+)?                 # theo sau là . hoặc _ hoặc space
+            (?P<title>.*)             # phần tiêu đề còn lại
+        $""",
+        rest,
+        flags=re.VERBOSE
+    )
+
+    if m_code_title:
+        title_guess = m_code_title.group("title")
+    else:
+        # fallback: coi toàn bộ 'rest' là tiêu đề
+        title_guess = rest
+
+    # Chuẩn hoá title: đổi _ -> space, gộp khoảng trắng, bỏ ký tự thừa đầu/cuối
+    title_guess = re.sub(r"[_\s]+", " ", title_guess).strip(" ._-")
+
+    return ids, year, title_guess
 
 def extract_clean_block(text: str, remove_noise=True):
     """
