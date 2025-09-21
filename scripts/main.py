@@ -13,16 +13,26 @@ if __name__ == "__main__":
   last_case_id = "C0000"
   now = datetime.now().strftime("%Y%m%d_%H%M%S")
   count = 0
+  is_start = False
+  start_file = ""
   total_files = sum(1 for _ in INPUT_PATH.rglob("*") if _.is_file())
 
   CSV_FILENAME = f"clean_{now}_{CHOOSEN_MODEL.value}.csv"
-  OUTPUT_FILENAME = f"output_{now}_{CHOOSEN_MODEL.value}.txt"
+  CSV_FILENAME = f"clean_{now}_{CHOOSEN_MODEL.value}.csv"
+
+  OUTPUT_FILENAME = f"clean_20250908_000006_gemini-2.5-flash.csv"
   
   if not Path(OUTPUT_FILENAME).exists():
     initCSV(CSV_FILENAME)
 
   for file in INPUT_PATH.rglob("*"):
     if file.is_dir():
+      continue
+
+    if not is_start and file.name.find("clean_20250908_000006_gemini-2.5-flash.csv") >= 0:
+      is_start = True
+    
+    if not is_start:
       continue
     
     count += 1
