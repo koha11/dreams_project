@@ -1,8 +1,10 @@
+from collections import Counter
 from pathlib import Path
 import re
 
 from typing import Iterable, List, Dict, Optional
 
+from annotated_types import doc
 import fitz  # PyMuPDF
 
 from output_helper import write_output  # PyMuPDF
@@ -10,17 +12,16 @@ from output_helper import write_output  # PyMuPDF
 from my_type import CHOOSEN_MODEL, INPUT_PATH, Dream
 from ai_helper import gemini_prompt, groq_prompt
 
-
 def readPdf(sub_folder, file_name, output_file_name, last_case_id="D0000") -> List[Dream]:
     id, file_path, date_from_filename, title_guess, dream_text, error = (None, None, None, None, None, None)
     file_path: Path = INPUT_PATH / sub_folder / file_name
     doc = fitz.open(file_path)
     id, date_from_filename, title_pdf = parse_filename(file_name)
     text = ""
-    for i, page in enumerate(doc):
-        text += page.get_text()
-
-    text = extract_clean_block(text)
+    
+    for i, page in enumerate(doc): text += page.get_text()
+        
+    text = extract_clean_block(text)    
 
     text = f"title_pdf: {title_pdf}. last case id: {last_case_id}. PDF text: {text}"
 
@@ -34,7 +35,7 @@ def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str, title_pdf: str)
     
     data = gemini_prompt(dream_text, OUTPUT_FILENAME, CHOOSEN_MODEL)
     # data = groq_prompt(dream_text, OUTPUT_FILENAME, CHOOSEN_MODEL, title_pdf)
-
+        
     data = update_dreams(data)
 
     return data
@@ -89,15 +90,15 @@ def parse_filename(file_name: str):
 
 def extract_clean_block(text: str, remove_noise=True):
     """
-    Trả về đoạn từ 'State of mind' đến trước 'student note'.
+    Trả về đoạn từ 'Date of dream|Dream date' đến trước 'Revision|student note|Student mark'.
     Nếu remove_noise=True, sẽ cắt bỏ khúc nhiễu ( (https... ) -> ... -> dòng '1/2' ).
     """
     if not text:
         return None
     
     # Regex marker (không phân biệt hoa thường, theo dòng)
-    RX_START = re.compile(r'(?im)^\s*Date of dream\b.*$')     # dòng bắt đầu
-    RX_STOP  = re.compile(r'(?im)^\s*student note\b.*$')           # dòng dừng
+    RX_START = re.compile(r'(?im)^\s*(?:Date of dream|Dream date)\s*:?.*$')
+    RX_STOP  = re.compile(r'(?im)^\s*(?:Revision|student note|Student mark)\b.*$')
 
     # 1) Xác định điểm bắt đầu
     m_start = RX_START.search(text)
@@ -299,3 +300,34 @@ def clean_dream_text(s: str) -> str:
         s = m.group(1).strip()
         
     return s
+
+def int_to_rgb(v: int):
+    return ((v >> 16) & 255, (v >> 8) & 255, v & 255)
+
+def is_black(color_int: int, tol: int = 0) -> bool:
+    """Return True if color is black; with tolerance for 'near-black'."""
+    r, g, b = int_to_rgb(color_int or 0)
+    return r <= tol and g <= tol and b <= tol
+
+def hex_of(v: int):
+    r,g,b = int_to_rgb(v)
+    return f"#{r:02X}{g:02X}{b:02X}"
+
+def looks_bold_by_font(font_name: str) -> bool:
+    if not font_name:
+        return False
+    f = font_name.lower()
+    return any(k in f for k in BOLD_KEYWORDS)
+
+def looks_heading_all_caps(text: str, min_len: int = 4, ratio: float = 0.8) -> bool:
+    letters = [c for c in text if c.isalpha()]
+    if len(letters) < min_len:
+        return False
+    upper = sum(1 for c in letters if c.isupper())
+    return (upper / len(letters)) >= ratio
+
+BOLD_KEYWORDS = (
+    "bold", "semibold", "demibold", "demi-bold",
+    "extrabold", "extra-bold", "ultrabold", "heavy", "black"
+)
+

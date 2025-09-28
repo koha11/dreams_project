@@ -8,6 +8,7 @@ title_pdf: A weird proposal. last case id: C0000. PDF text: Date of dream: Tuesd
     "state_of_mind": "Surprised, Angry, Afraid, Disappoited",
     "notes": "From PDF: A weird proposal."
   },
+  
   {
     "case_id": "C0001",
     "dream_id": "D0002",
@@ -1519,3 +1520,96 @@ title_pdf: A difficulty seeing global vision. last case id: C0092. PDF text: Dat
 ]
 
 
+title_pdf: Contract Negotiation. last case id: C0093. PDF text: None
+[]
+title_pdf: My Decision. last case id: C0093. PDF text: None
+[]
+title_pdf: The Chase. last case id: C0093. PDF text: None
+[]
+title_pdf: My Grandmother. last case id: C0093. PDF text: None
+[]
+title_pdf: The Cross. last case id: C0093. PDF text: None
+[]
+title_pdf: PHU QUOC TRAVEL. last case id: C0093. PDF text: None
+[]
+title_pdf: Accident on the Street. last case id: C0093. PDF text: None
+[]
+title_pdf: The new shoes. last case id: C0093. PDF text: None
+[]
+title_pdf: The Gift. last case id: C0093. PDF text: None
+[]
+title_pdf: The pickpocketed. last case id: C0093. PDF text: None
+[]
+title_pdf: My Soul. last case id: C0093. PDF text: None
+[]
+title_pdf: Go out with my Friend. last case id: C0093. PDF text: None
+[]
+title_pdf: Overcoming needs. last case id: C0093. PDF text: None
+[]
+title_pdf: Quarrel inside the hut. last case id: C0093. PDF text: None
+[]
+title_pdf: My friends. last case id: C0093. PDF text: None
+[]
+title_pdf: Voluntary work. last case id: C0093. PDF text: None
+[]
+title_pdf: I m going to a wedding party. last case id: C0093. PDF text: None
+[]
+title_pdf: Old colleagues. last case id: C0093. PDF text: None
+[]
+title_pdf: Invited friends to traveling. last case id: C0093. PDF text: None
+[]
+title_pdf: Transform waste sources. last case id: C0093. PDF text: None
+[]
+title_pdf: Overcoming challenges. last case id: C0093. PDF text: Nonetitle_pdf: Contract Negotiation. last case id: C0093. PDF text: None
+[]:
+title_pdf: Contract Negotiation. last case id: C0093. PDF text: None
+[]
+title_pdf: My Decision. last case id: C0093. PDF text: None
+[]
+title_pdf: The Chase. last case id: C0093. PDF text: None
+[]
+title_pdf: My Grandmother. last case id: C0093. PDF text: None
+[]
+title_pdf: The Cross. last case id: C0093. PDF text: None
+[]
+title_pdf: PHU QUOC TRAVEL. last case id: C0093. PDF text: None
+[]
+title_pdf: Accident on the Street. last case id: C0093. PDF text: None
+[]
+title_pdf: The new shoes. last case id: C0093. PDF text: None
+[]
+title_pdf: The Gift. last case id: C0093. PDF text: None
+[]
+title_pdf: The pickpocketed. last case id: C0093. PDF text: None
+[]
+title_pdf: My Soul. last case id: C0093. PDF text: None
+[]
+title_pdf: Go out with my Friend. last case id: C0093. PDF text: None
+[]
+title_pdf: Overcoming needs. last case id: C0093. PDF text: None
+[]
+title_pdf: Quarrel inside the hut. last case id: C0093. PDF text: None
+[]
+title_pdf: My friends. last case id: C0093. PDF text: None
+[]
+title_pdf: Voluntary work. last case id: C0093. PDF text: None
+[]
+title_pdf: I m going to a wedding party. last case id: C0093. PDF text: None
+[]
+title_pdf: Old colleagues. last case id: C0093. PDF text: None
+[]
+title_pdf: Invited friends to traveling. last case id: C0093. PDF text: None
+[]
+title_pdf: Transform waste sources. last case id: C0093. PDF text: None
+[]
+title_pdf: Overcoming challenges. last case id: C0093. PDF text: None
+[]
+title_pdf: Amusement parks. last case id: C0093. PDF text: None
+[]
+title_pdf: Escape from violence. last case id: C0093. PDF text: None
+[]
+title_pdf: Becoming a mother. last case id: C0093. PDF text: None
+[]
+title_pdf: Escape from the funeral. last case id: C0093. PDF text: None
+[]
+title_pdf: Escape from the funeral. last case id: C0093. PDF text: None

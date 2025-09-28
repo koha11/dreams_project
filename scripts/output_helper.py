@@ -32,12 +32,18 @@ def write_csv(rows: list[Dream], file_name: str ):
     writer.writerows(rows)
   print(f"Output written to {csv_file.as_posix()}")
 
+def initOutput(file_name):
+  output_path = OUTPUT_PATH / file_name
+  with open(output_path, "w", encoding="utf-8") as f:
+    f.write("")
+  print(f"Init output file in {output_path}")
+  
 def initCSV(file_name):
   csv_file = Path(OUTPUT_PATH / file_name)
   with open(csv_file, "w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)
     writer.writeheader()
-  print(f"Output written to {csv_file.as_posix()}")
+  print(f"Init CSV file in {csv_file.as_posix()}")
 
 def read_rows():
   """Returns a list of dicts (each row keyed by FIELDNAMES)."""

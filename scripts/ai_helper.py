@@ -23,15 +23,16 @@ _rate_limiter_15_per_min = RateLimiter(15, 60.0) # gemini-2.5-flash-lite
 
 # Tạo limiter: 10 req / 60s
 _rate_limiter_10_per_min = RateLimiter(10, 60.0) # gemini-2.5-flash
+
+# if CHOOSEN_MODEL == GEMINI_MODEL.GEMINI_2_5_FLASH:
+#     _rate_limiter_10_per_min.acquire()
+# if CHOOSEN_MODEL == GEMINI_MODEL.GEMINI_2_0_FLASH_LITE:
+#     _rate_limiter_30_per_min.acquire()
+# if CHOOSEN_MODEL == GEMINI_MODEL.GEMINI_2_5_FLASH_LITE or CHOOSEN_MODEL == GEMINI_MODEL.GEMINI_2_0_FLASH:
+#     _rate_limiter_15_per_min.acquire()
   
-def gemini_prompt(prompt: str, OUTPUT_FILENAME: str, model: GEMINI_MODEL):
-    
-    if model == GEMINI_MODEL.GEMINI_2_5_FLASH:
-      _rate_limiter_10_per_min.acquire()
-    if model == GEMINI_MODEL.GEMINI_2_0_FLASH_LITE:
-      _rate_limiter_30_per_min.acquire()
-    if model == GEMINI_MODEL.GEMINI_2_5_FLASH_LITE or model == GEMINI_MODEL.GEMINI_2_0_FLASH:
-      _rate_limiter_15_per_min.acquire()
+def gemini_prompt(prompt: str, OUTPUT_FILENAME: str, model: GEMINI_MODEL):    
+    _rate_limiter_10_per_min.acquire()
       
     system_instruction = """
     công việc của bạn là nhận dữ liệu text được đọc từ 1 file pdf (nội dung của pdf chủ yếu là về những giấc mơ), 
@@ -39,7 +40,7 @@ def gemini_prompt(prompt: str, OUTPUT_FILENAME: str, model: GEMINI_MODEL):
     - tôi muốn trả về 1 mảng JSON (no prose) gồm các giấc mơ có trong đoạn text trên, 
     1 giấc mơ có 6 key case_id, dream_id, date, dream_text, state_of_mind, notes, 
     với case_id có format là Cxxxx (x là số, ví dụ C0001, C0002,...) và phải bắt đầu từ case_id trước đó (được cung cấp trong văn bản),
-    tất cả các giấc mơ trong cùng 1 đoạn text đều có chung case_id, state_of_mind (được lấy từ cụm từ "State of mind: " trong văn bản) và
+    tất cả các giấc mơ trong cùng 1 đoạn text đều có chung case_id, state_of_mind (được lấy từ cụm từ "State of mind: " hoặc  "Dream mood:" trong văn bản) và
     date (lấy theo định dạng dd/mm/yyyy),
     notes là From PDF: title_pdf, 
     dream_id có format là Dxxxx (x là số, ví dụ D0001, D0002,...),

@@ -6,7 +6,7 @@ import time
 from collections import deque
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-INPUT_PATH = BASE_DIR / "data/D"
+INPUT_PATH = BASE_DIR / "data/5. NHƯ (21 - 25) _ 113 Dreams/TỐ NHƯ 2023 _ ÂN"
 OUTPUT_PATH = BASE_DIR / "outputs"
 
 class GEMINI_MODEL(Enum):
@@ -57,5 +57,6 @@ class RateLimiter:
             self._calls.append(time.monotonic())
 
 # CHOOSEN_MODEL = GROQ_MODEL.LLAMA_3_1_8B_INSTANT
-CHOOSEN_MODEL = GEMINI_MODEL.GEMINI_2_5_FLASH_LITE
+CHOOSEN_MODEL = GEMINI_MODEL.GEMINI_2_5_FLASH
 
+# C0093
