@@ -10,7 +10,7 @@ if __name__ == "__main__":
   data = list()
   par = str()
   num_tokens = 0
-  last_case_id = "C0236" # C0001 - C0093 | C0094 - C0176 | C0177 - C0204 - C0230 - 
+  last_case_id = "C0215" # C0001 - C0093 | C0094 - C0176 | C0177
   now = datetime.now().strftime("%Y%m%d_%H%M%S")
   count = 0
   sub_folder = ""
@@ -19,13 +19,16 @@ if __name__ == "__main__":
 
   CSV_FILENAME = f"clean_{now}_{CHOOSEN_MODEL.value}.csv"
   CSV_FILENAME = f"test.csv"
-  CSV_FILENAME = f"5_nhu_dreams.csv"
+  CSV_FILENAME = f"4_trinh_dreams.csv"
 
   OUTPUT_FILENAME = f"output_{now}_{CHOOSEN_MODEL.value}.txt"
   OUTPUT_FILENAME = f"output_test.txt"
-  OUTPUT_FILENAME = f"output_5_nhu_dreams.txt"
+  OUTPUT_FILENAME = f"output_4_trinh_dreams.txt"
   
-  START_FROM_FILE = "07 Life"
+  START_FROM_FILE = "When I was pregnant I had a dream about eating chicken"
+  
+  if(START_FROM_FILE == ""):
+    is_start = True
 
   if not Path(OUTPUT_PATH / CSV_FILENAME).exists():
     initCSV(CSV_FILENAME)

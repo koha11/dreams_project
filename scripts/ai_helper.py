@@ -32,7 +32,7 @@ _rate_limiter_10_per_min = RateLimiter(10, 60.0) # gemini-2.5-flash
 #     _rate_limiter_15_per_min.acquire()
   
 def gemini_prompt(prompt: str, OUTPUT_FILENAME: str, model: GEMINI_MODEL):    
-    _rate_limiter_10_per_min.acquire()
+    _rate_limiter_15_per_min.acquire()
       
     system_instruction = """
     công việc của bạn là nhận dữ liệu text được đọc từ 1 file pdf (nội dung của pdf chủ yếu là về những giấc mơ), 
@@ -44,8 +44,8 @@ def gemini_prompt(prompt: str, OUTPUT_FILENAME: str, model: GEMINI_MODEL):
     date (lấy theo định dạng dd/mm/yyyy),
     notes là From PDF: title_pdf, 
     dream_id có format là Dxxxx (x là số, ví dụ D0001, D0002,...),
-    phần dream_text là quan trọng nhất, bạn phải lấy chính xác từng dream riêng biệt,
-    và nội dung phải y hệt với văn bản gốc (loại bỏ các ký tự escapse, các từ để liệt kê như my first dream is, second dream,... hay các chỉ mục 1., 2., ...),
+    phần dream_text là quan trọng nhất, bạn phải lấy chính xác từng dream riêng biệt không bị lẫn phần analysis (các câu in đậm) hay các phần như chú thích, lời chào hỏi,
+    và nội dung phải y hệt với văn bản gốc (loại bỏ các ký tự escapse, các từ để liệt kê như my first dream is, second dream,... hay các chỉ mục 1., 2., ...,),
     """
 
     client = genai.Client()

@@ -1,4 +1,5 @@
 data
 scripts/__pycache__
+outputs
 venv
 .env

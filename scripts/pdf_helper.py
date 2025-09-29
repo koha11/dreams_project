@@ -1,6 +1,8 @@
 from collections import Counter
+import math
 from pathlib import Path
 import re
+import unicodedata as ud
 
 from typing import Iterable, List, Dict, Optional
 
@@ -17,7 +19,48 @@ def readPdf(sub_folder, file_name, output_file_name, last_case_id="D0000") -> Li
     file_path: Path = INPUT_PATH / sub_folder / file_name
     doc = fitz.open(file_path)
     id, date_from_filename, title_pdf = parse_filename(file_name)
+    pdf_text_list = []
     text = ""
+    is_not_dream_text = False
+    
+    # for i,page in enumerate(doc):
+    #     data = page.get_text("dict")  # structured: blocks -> lines -> spans
+    #     for block in data.get("blocks", []):
+    #         if "lines" not in block:       # skip image blocks, etc.
+    #             continue
+    #         for line in block["lines"]:
+    #             if len(pdf_text_list) > 0 and pdf_text_list[-1] != '\xa0':
+    #                 pdf_text_list.append(".")
+    #             for span in line["spans"]:
+    #                 text  = span["text"]
+    #                 flags = span.get("flags", 0)
+    #                 is_bold   = bool(flags & 16)
+    #                 is_italic = bool(flags & 2)
+    #                 srgb = span.get("color", 0)
+    #                 hex_rgb = f"#{srgb:06x}"
+                    
+    #                 # if hex_rgb == "#c216c2" or hex_rgb == "#ffffff":
+    #                 #     is_not_dream_text = not is_not_dream_text
+    #                 #     continue                                
+                    
+    #                 if is_all_caps(text):
+    #                     continue
+                    
+    #                 if is_not_dream_text:                                        
+    #                     continue
+                    
+    #                 write_output(str({
+    #                     "text": text,
+    #                     "font": span.get("font"),
+    #                     "size": span.get("size"),
+    #                     "color": hex_rgb,
+    #                 }) + "\n", output_file_name)
+                    
+    #                 if hex_rgb == "#000000":
+    #                     pdf_text_list.append(text)
+                        
+    
+    # write_output("".join(pdf_text_list), output_file_name)
     
     for i, page in enumerate(doc): text += page.get_text()
         
@@ -26,6 +69,8 @@ def readPdf(sub_folder, file_name, output_file_name, last_case_id="D0000") -> Li
     text = f"title_pdf: {title_pdf}. last case id: {last_case_id}. PDF text: {text}"
 
     text = clean_dream_text(text)
+    
+    text = remove_dash_bracket_blocks(text)
 
     write_output(text, output_file_name)
     
@@ -39,7 +84,6 @@ def llm_filter_dream_text(dream_text: str, OUTPUT_FILENAME: str, title_pdf: str)
     data = update_dreams(data)
 
     return data
-
 
 def parse_filename(file_name: str):
 
@@ -139,6 +183,40 @@ def remove_noise_chunk(block: str) -> str:
     # Cắt bỏ đoạn [m_open.start(), m_page.end())
     cleaned = block[:m_open.start()] + block[m_page.end():]
     return cleaned
+
+def remove_dash_bracket_blocks(text: str) -> str:
+    # Xóa mọi khối dạng [- ... ] (kể cả xuống dòng bên trong)
+    BLOCK_RX = re.compile(r"\[\s*-\s*.*?\]", flags=re.DOTALL)
+    
+    out = BLOCK_RX.sub("", text)
+    # dọn khoảng trắng thừa sau khi xóa
+    out = re.sub(r"\s{2,}", " ", out)
+    out = re.sub(r"\s+([,.!?;:…])", r"\1", out)
+    return out.strip()
+
+def strip_allcaps_runs(text: str, min_words: int = 0) -> str:
+    ALLCAPS_RUN = re.compile(
+    r"""
+    (                           # capture the whole run
+      \b[A-Z][A-Z'’\-]+         # 1st ALL-CAPS word (len >= 2)
+      (?:[ ,:;–-]+\b[A-Z][A-Z'’\-]+){2,}   # + at least 2 more ALL-CAPS words
+    )
+    """,
+    re.VERBOSE,
+    )
+    
+    def _repl(m):
+        run = m.group(0)
+        # Count words in the run (tokens with letters)
+        n_words = len(re.findall(r"\b[A-Z][A-Z'’\-]+\b", run))
+        return "" if n_words >= min_words else run
+
+    out = ALLCAPS_RUN.sub(_repl, text)
+    # Tidy spaces created by removals
+    out = re.sub(r"\s{2,}", " ", out)
+    out = re.sub(r"\s+([,.!?;:])", r"\1", out)
+    
+    return out.strip()
 
 def parse_pdf_text_to_dreams(
     pdf_text: str,
@@ -301,33 +379,81 @@ def clean_dream_text(s: str) -> str:
         
     return s
 
-def int_to_rgb(v: int):
-    return ((v >> 16) & 255, (v >> 8) & 255, v & 255)
+def srgb_hex(srgb_int: int) -> str:
+    return f"#{srgb_int:06x}"
 
-def is_black(color_int: int, tol: int = 0) -> bool:
-    """Return True if color is black; with tolerance for 'near-black'."""
-    r, g, b = int_to_rgb(color_int or 0)
-    return r <= tol and g <= tol and b <= tol
+def _shear_angle_deg(transform):
+    """
+    transform: [a, b, c, d, e, f] từ texttrace (ma trận Tm).
+    Trả về độ nghiêng (độ). Dùng cả b/a và c/d rồi lấy trị tuyệt đối lớn hơn.
+    """
+    a, b, c, d, _, _ = transform
+    ang1 = math.degrees(math.atan2(c, d)) if abs(d) > 1e-9 else 0.0
+    ang2 = math.degrees(math.atan2(b, a)) if abs(a) > 1e-9 else 0.0
+    return max(abs(ang1), abs(ang2))
 
-def hex_of(v: int):
-    r,g,b = int_to_rgb(v)
-    return f"#{r:02X}{g:02X}{b:02X}"
+def _collect_italic_regions(page: fitz.Page, shear_thresh_deg: float = 7.0):
+    """
+    Quét texttrace để lấy các bbox có nghiêng (italic) theo ngưỡng độ.
+    Trả về list các Rect (khu vực nghiêng).
+    """
+    italic_boxes = []
+    for tr in page.get_texttrace():
+        if tr.get("type") != "text":
+            continue
+        tf = tr.get("transform")
+        if not tf:
+            continue
+        if _shear_angle_deg(tf) >= shear_thresh_deg:
+            italic_boxes.append(fitz.Rect(tr["bbox"]))
+    return italic_boxes
 
-def looks_bold_by_font(font_name: str) -> bool:
-    if not font_name:
+def spans_with_italic_only(page: fitz.Page, shear_thresh_deg: float = 7.0, use_flags_fallback: bool = False):
+    """
+    Trả về list spans: {text, bbox, color, size, italic}
+    - italic dựa trên texttrace (shear). Không xử lý bold.
+    - Tùy chọn: fallback dùng span.flags (bit 2) nếu muốn (mặc định tắt).
+    """
+    # 1) Lấy các vùng nghiêng từ texttrace
+    italic_regions = _collect_italic_regions(page, shear_thresh_deg)
+
+    # 2) Duyệt spans từ "dict" và gán italic nếu bbox giao với vùng nghiêng
+    out = []
+    d = page.get_text("dict")
+    for block in d.get("blocks", []):
+        if "lines" not in block:
+            continue
+        for line in block["lines"]:
+            for sp in line["spans"]:
+                txt = sp.get("text", "")
+                if not txt.strip():
+                    continue
+                bbox = fitz.Rect(sp["bbox"])
+                italic = any(bbox.intersects(r) for r in italic_regions)
+
+                if use_flags_fallback and not italic:
+                    # bit 2 của flags thường không đáng tin trong nhiều PDF, nhưng để tùy chọn
+                    italic = bool(sp.get("flags", 0) & 2)
+
+                out.append({
+                    "text": txt,
+                    "bbox": sp["bbox"],
+                    "size": sp.get("size"),
+                    "color": f"#{sp.get('color', 0):06x}",
+                    "italic": italic,
+                })
+    return out
+
+def is_all_caps(text: str) -> bool:
+
+    if not text or text.isspace() or text.isdigit() or len(text) < 2:
         return False
-    f = font_name.lower()
-    return any(k in f for k in BOLD_KEYWORDS)
+    
+    # s = ud.normalize("NFKC", text)
 
-def looks_heading_all_caps(text: str, min_len: int = 4, ratio: float = 0.8) -> bool:
-    letters = [c for c in text if c.isalpha()]
-    if len(letters) < min_len:
-        return False
-    upper = sum(1 for c in letters if c.isupper())
-    return (upper / len(letters)) >= ratio
-
-BOLD_KEYWORDS = (
-    "bold", "semibold", "demibold", "demi-bold",
-    "extrabold", "extra-bold", "ultrabold", "heavy", "black"
-)
-
+    # has_letter = False    
+    for ch in text[1:]:
+        if not ch.isupper() and not ch in ("-", "—", "–", "'", "’", '"', "“", "”", ".", ",", "!", "?", ";", ":", "/"):
+            return False
+            
+    return True
